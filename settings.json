@@ -1,0 +1,94 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left",
+    "editor.fontFamily": "'Victor Mono', 'Noto Color Emoji'",
+    "editor.wordWrap": "on",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.visible": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.sortOrder": "type",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "'FuraMono Nerd Font'",
+    "emmet.includeLanguages": {
+        "ejs": "html",
+        "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+        "xml": {
+            "attr_quotes": "single"
+        }
+    },
+    "editor.detectIndentation": false,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.formatOnSave": true,
+    "window.newWindowDimensions": "maximized",
+    "window.restoreWindows": "none",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.port": 3500,
+    "prettier.semi": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggest.localityBonus": true,
+    "editor.suggestFontSize": 12,
+    "editor.parameterHints.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.titleBarStyle": "native",
+    "editor.mouseWheelZoom": true,
+    "editor.smoothScrolling": true,
+    "cSpell.language": "en-GB",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            // Prettier option here
+            "semi": false,
+            "singleQuote": true
+        }
+    },
+    "git.enableSmartCommit": true,
+    "editor.renderIndentGuides": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Cobalt2",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#80CBC4",
+        "list.activeSelectionForeground": "#80CBC4",
+        "list.inactiveSelectionForeground": "#80CBC4",
+        "list.highlightForeground": "#80CBC4",
+        "scrollbarSlider.activeBackground": "#80CBC450",
+        "editorSuggestWidget.highlightForeground": "#80CBC4",
+        "textLink.foreground": "#80CBC4",
+        "progressBar.background": "#80CBC4",
+        "pickerGroup.foreground": "#80CBC4",
+        "tab.activeBorder": "#80CBC4",
+        "notificationLink.foreground": "#80CBC4",
+        "editorWidget.resizeBorder": "#80CBC4",
+        "editorWidget.border": "#80CBC4",
+        "settings.modifiedItemIndicator": "#80CBC4",
+        "settings.headerForeground": "#80CBC4",
+        "panelTitle.activeBorder": "#80CBC4",
+        "breadcrumb.activeSelectionForeground": "#80CBC4",
+        "menu.selectionForeground": "#80CBC4",
+        "menubar.selectionForeground": "#80CBC4",
+        "editor.findMatchBorder": "#80CBC4",
+        "selection.background": "#80CBC440"
+    },
+    "materialTheme.accent": "Teal",
+    "go.autocompleteUnimportedPackages": true,
+    "terminal.integrated.fontSize": 16,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "liveServer.settings.CustomBrowser": "firefox",
+    "editor.tabSize": 2
+}
