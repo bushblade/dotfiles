@@ -27,6 +27,9 @@ autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden=1
 
+" yank to system keyboard
+ clipboard=unnamedplus
+
 "Prettier format on save & leaving insert
 let g:prettier#quickfix_enabled = 0
 
