@@ -5,6 +5,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'joshdick/onedark.vim'
+Plug 'preservim/nerdcommenter'
 "Plug 'ajh17/spacegray.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -17,6 +18,8 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+filetype plugin on
 
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
