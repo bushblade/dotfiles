@@ -28,7 +28,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let NERDTreeShowHidden=1
 
 " yank to system keyboard
- clipboard=unnamedplus
+set clipboard=unnamedplus
 
 "Prettier format on save & leaving insert
 let g:prettier#quickfix_enabled = 0
