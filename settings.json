@@ -64,7 +64,7 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "One Dark Pro",
   "materialTheme.accent": "Teal",
   "go.autocompleteUnimportedPackages": true,
   "terminal.integrated.fontSize": 16,
@@ -72,5 +72,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "liveServer.settings.CustomBrowser": "firefox",
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "i",
+        "i"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ]
 }
