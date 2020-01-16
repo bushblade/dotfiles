@@ -76,12 +76,13 @@
   "vim.insertModeKeyBindings": [
     {
       "before": [
-        "i",
-        "i"
+        "j",
+        "j"
       ],
       "after": [
         "<Esc>"
       ]
     }
-  ]
+  ],
+  "vim.easymotion": true
 }
