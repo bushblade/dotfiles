@@ -10,6 +10,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
@@ -48,8 +49,8 @@ highlight LineNr ctermfg=DarkGrey
 let g:airline_powerline_fonts = 1
 
 
-" map ii to escape
-inoremap ii <Esc>
+" map jj to escape
+inoremap jj <Esc>
 
 " stuff for coc below
 " ------------------------------------------------------------------------------------
