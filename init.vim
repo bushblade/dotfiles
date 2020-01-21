@@ -6,6 +6,7 @@ Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'joshdick/onedark.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-surround'
 "Plug 'ajh17/spacegray.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -184,5 +185,3 @@ inoremap <silent><expr> <TAB>
             nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
             " Resume latest coc list
             nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-            
