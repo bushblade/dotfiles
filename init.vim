@@ -1,5 +1,6 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
+Plug 'ap/vim-css-color'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mxw/vim-jsx'
