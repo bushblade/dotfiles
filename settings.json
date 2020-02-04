@@ -85,5 +85,8 @@
     }
   ],
   "vim.easymotion": true,
-  "emmet.triggerExpansionOnTab": true
+  "emmet.triggerExpansionOnTab": true,
+  "vim.easymotionMarkerFontFamily": "",
+  "vim.easymotionMarkerFontWeight": "bold",
+  "editor.lineNumbers": "relative"
 }
