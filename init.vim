@@ -27,6 +27,8 @@ filetype plugin on
 "Enable mouse
 set mouse=a
 
+" Relative line numbering
+set relativenumber
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
