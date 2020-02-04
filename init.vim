@@ -24,6 +24,9 @@ call plug#end()
 
 filetype plugin on
 
+"Enable mouse
+set mouse=a
+
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
@@ -33,9 +36,8 @@ let NERDTreeShowHidden=1
 " yank to system keyboard
 set clipboard=unnamedplus
 
-"Prettier format on save & leaving insert
-let g:prettier#quickfix_enabled = 0
-
+"Prettier format on save 
+"let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
 "autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
@@ -49,7 +51,6 @@ highlight LineNr ctermfg=DarkGrey
 
 "airlinefonts
 let g:airline_powerline_fonts = 1
-
 
 " map jj to escape
 inoremap jj <Esc>

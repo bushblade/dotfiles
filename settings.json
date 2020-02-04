@@ -84,5 +84,6 @@
       ]
     }
   ],
-  "vim.easymotion": true
+  "vim.easymotion": true,
+  "emmet.triggerExpansionOnTab": true
 }
