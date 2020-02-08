@@ -1,6 +1,7 @@
 {
   "emmet.includeLanguages": {
-    "vue-html": "html",
-    "javascript": "javascriptreact"
+    "vue": "html",
+    "javascript": "javascriptreact",
+    "js": "javascriptreact"
   }
 }
