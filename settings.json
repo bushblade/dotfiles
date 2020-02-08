@@ -64,7 +64,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "One Dark Pro",
   "materialTheme.accent": "Teal",
   "go.autocompleteUnimportedPackages": true,
   "terminal.integrated.fontSize": 16,
@@ -88,5 +87,6 @@
   "emmet.triggerExpansionOnTab": true,
   "vim.easymotionMarkerFontFamily": "",
   "vim.easymotionMarkerFontWeight": "bold",
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "workbench.colorTheme": "One Dark Pro"
 }
