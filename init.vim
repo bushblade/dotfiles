@@ -7,8 +7,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'joshdick/onedark.vim'
-Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 "Plug 'ajh17/spacegray.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -57,6 +57,12 @@ let g:airline_powerline_fonts = 1
 
 " map jj to escape
 inoremap jj <Esc>
+
+" Shortcutting split navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " stuff for coc below
 " ------------------------------------------------------------------------------------
