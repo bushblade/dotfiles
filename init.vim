@@ -24,45 +24,43 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 filetype plugin on
-
+set ignorecase
+set smartcase
 "Enable mouse
 set mouse=a
-
 " Relative line numbering
 set relativenumber
+" yank to system keyboard
+set clipboard=unnamedplus
+colorscheme onedark
+syntax on
+set number
+highlight Normal ctermbg=None
+highlight LineNr ctermfg=DarkGrey
+" map jj to escape
+inoremap jj <Esc>
+" Shortcutting split navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden=1
 
-" yank to system keyboard
-set clipboard=unnamedplus
 
 "Prettier format on save 
-"let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
-"autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
-colorscheme onedark
-syntax on
-set number
-highlight Normal ctermbg=None
-highlight LineNr ctermfg=DarkGrey
 
 
 "airlinefonts
 let g:airline_powerline_fonts = 1
 
-" map jj to escape
-inoremap jj <Esc>
-
-" Shortcutting split navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
 
 " stuff for coc below
 " ------------------------------------------------------------------------------------
