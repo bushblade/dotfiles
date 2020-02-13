@@ -23,7 +23,9 @@ Plug 'prettier/vim-prettier', {
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" Basic settings
 filetype plugin on
+syntax on
 set ignorecase
 set smartcase
 "Enable mouse
@@ -32,8 +34,8 @@ set mouse=a
 set relativenumber
 " yank to system keyboard
 set clipboard=unnamedplus
+set tabstop=2 shiftwidth=2 expandtab
 colorscheme onedark
-syntax on
 set number
 highlight Normal ctermbg=None
 highlight LineNr ctermfg=DarkGrey
@@ -44,7 +46,8 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
+" Alias replace all to S
+nnoremap S :%s//gi<Left><Left><Left>
 
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
@@ -64,7 +67,6 @@ let g:airline_powerline_fonts = 1
 
 " stuff for coc below
 " ------------------------------------------------------------------------------------
-set tabstop=2 shiftwidth=2 expandtab
 
 " if hidden is not set, TextEdit might fail.
 set hidden
@@ -194,3 +196,9 @@ inoremap <silent><expr> <TAB>
             nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
             " Resume latest coc list
             nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+            
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
