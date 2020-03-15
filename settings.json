@@ -30,7 +30,6 @@
   "window.restoreWindows": "none",
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.port": 3500,
-  "prettier.semi": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.suggest.localityBonus": true,
   "editor.suggestFontSize": 12,
@@ -74,13 +73,8 @@
   "editor.tabSize": 2,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.easymotion": true,
@@ -88,5 +82,10 @@
   "vim.easymotionMarkerFontFamily": "",
   "vim.easymotionMarkerFontWeight": "bold",
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "prettier.configPath": "~/dotfiles/prettierrc",
+  "vim.enableNeovim": true,
+  "vim.highlightedyank.enable": true,
+  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.overrideCopy": false
 }
