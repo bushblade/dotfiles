@@ -82,7 +82,7 @@
   "vim.easymotionMarkerFontFamily": "",
   "vim.easymotionMarkerFontWeight": "bold",
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Visual Studio Dark",
   "prettier.configPath": "~/dotfiles/prettierrc",
   "vim.enableNeovim": true,
   "vim.highlightedyank.enable": true,
