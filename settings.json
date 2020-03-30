@@ -2,7 +2,7 @@
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0,
   "workbench.sideBar.location": "left",
-  "editor.fontFamily": "'Victor Mono', 'Noto Color Emoji'",
+  "editor.fontFamily": "'Hack Nerd Font'",
   "editor.wordWrap": "on",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
@@ -12,7 +12,7 @@
   "terminal.integrated.cursorStyle": "line",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
-  "terminal.integrated.fontFamily": "'FuraMono Nerd Font'",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
   "emmet.includeLanguages": {
     "ejs": "html",
     "javascript": "javascriptreact"
@@ -73,8 +73,13 @@
   "editor.tabSize": 2,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.easymotion": true,
