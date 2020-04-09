@@ -196,9 +196,12 @@ inoremap <silent><expr> <TAB>
             nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
             " Resume latest coc list
             nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+            " ctrl + p to launch CocList files
+            nnoremap <silent> <C-p> :<c-u>CocList files<cr> 
             
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
