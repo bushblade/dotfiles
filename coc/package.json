@@ -10,7 +10,7 @@
     "coc-prettier": ">=1.1.12",
     "coc-snippets": ">=2.1.24",
     "coc-spell-checker": ">=1.2.0",
-    "coc-tsserver": ">=1.4.12",
+    "coc-tsserver": ">=1.4.13",
     "coc-vetur": ">=1.1.10",
     "coc-yaml": ">=1.0.4",
     "coc-yank": ">=1.1.4"
