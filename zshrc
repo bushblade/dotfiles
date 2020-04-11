@@ -54,9 +54,8 @@ export ZSH=/home/will/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
-
+plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -69,9 +68,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='nvim'
+#   export EDITOR='vim'
 # else
-#   export EDITOR='nvim'
+#   export EDITOR='mvim'
 # fi
 
 # Compilation flags
@@ -86,27 +85,24 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias code="vscodium"
+alias r="ranger"
+alias x="exit"
+alias nv="nvim"
+alias rm="rm -i"
+alias mv="mv -i"
+alias zshconfig='nvim ~/.zshrc'
 
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-  prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
- fi
-}
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/home/will/.netlify/helper/path.zsh.inc' ]; then source '/home/will/.netlify/helper/path.zsh.inc'; fi
-# powelevel9k theme
-#source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+
+# powelevel10k theme
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs newline)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator time)
-POWERLEVEL9K_MODE='nerdfont-complete'
-
-#ZSH_THEME=~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
