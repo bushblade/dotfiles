@@ -105,4 +105,6 @@ VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 
 # vi mode
 bindkey -v
-export KEYTIMEOUT=1
+# export KEYTIMEOUT=1
+# bind jj to normal mode 
+bindkey jj vi-cmd-mode
