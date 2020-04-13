@@ -23,23 +23,33 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Basic settings
+colorscheme onedark
 filetype plugin on
 syntax on
-set ignorecase
-set smartcase
+
 "Enable mouse
 set mouse=a
+
 " Relative line numbering
 set relativenumber
+
 " yank to system keyboard
 set clipboard=unnamedplus
+
+set ignorecase
+set smartcase
 set tabstop=2 shiftwidth=2 expandtab
-colorscheme onedark
 set number
+set wrap
+set linebreak
+set nolist
+
 highlight Normal ctermbg=None
 highlight LineNr ctermfg=DarkGrey
+
 " map jj to escape
 inoremap jj <Esc>
+
 " Shortcutting split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
