@@ -12,6 +12,8 @@ export ZSH=/home/will/.oh-my-zsh
 # ZSH_THEME="agnoster"
 # ZSH_THEME="powerlevel9k"
 # ZSH_THEME="avit"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -95,9 +97,6 @@ alias zshconfig='nvim ~/.zshrc'
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/home/will/.netlify/helper/path.zsh.inc' ]; then source '/home/will/.netlify/helper/path.zsh.inc'; fi
-
-# powelevel10k theme
-source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
