@@ -55,7 +55,10 @@ export ZSH=/home/will/.oh-my-zsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting tmux)
+
+# autostart tmux
+# ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
