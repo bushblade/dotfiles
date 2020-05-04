@@ -56,8 +56,13 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
 " Alias replace all to S
 nnoremap S :%s//gi<Left><Left><Left>
+
+" Move selections up or down
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '<+1<CR>gv-gv
 
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
