@@ -95,6 +95,8 @@ alias nv="nvim"
 alias rm="rm -i"
 alias mv="mv -i"
 alias zshconfig='nvim ~/.zshrc'
+alias cl='clear'
+alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/home/will/.netlify/helper/path.zsh.inc' ]; then source '/home/will/.netlify/helper/path.zsh.inc'; fi
