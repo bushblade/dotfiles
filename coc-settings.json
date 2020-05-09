@@ -7,7 +7,7 @@
   "list.source.files.excludePatterns": [
     "**/node_modules/**",
     "**/node_modules/**/.*",
-    "**/node_modules/**/.*/**"
-  ],
-  "list.source.files.excludePatterns": ["**/.git/**"]
+    "**/node_modules/**/.*/**",
+    "**/.git/**"
+  ]
 }
