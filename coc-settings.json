@@ -3,5 +3,11 @@
     "vue": "html",
     "javascript": "javascriptreact",
     "js": "javascriptreact"
-  }
+  },
+  "list.source.files.excludePatterns": [
+    "**/node_modules/**",
+    "**/node_modules/**/.*",
+    "**/node_modules/**/.*/**"
+  ],
+  "list.source.files.excludePatterns": ["**/.git/**"]
 }
