@@ -44,6 +44,7 @@ set number
 set wrap
 set linebreak
 set nolist
+set cursorline
 
 highlight Normal ctermbg=None
 highlight LineNr ctermfg=DarkGrey
