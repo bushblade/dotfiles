@@ -21,6 +21,7 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'justinmk/vim-sneak'
 call plug#end()
 
 " Basic settings
@@ -58,6 +59,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" remap sneak to f
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
+
+ 
 " Alias replace all to S
 nnoremap S :%s//gi<Left><Left><Left>
 
