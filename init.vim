@@ -3,7 +3,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'easymotion/vim-easymotion'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-fugitive'
-" Plug 'jiangmiao/auto-pairs'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'joshdick/onedark.vim'
@@ -22,6 +21,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'justinmk/vim-sneak'
+" Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Basic settings
@@ -46,8 +46,8 @@ set wrap
 set linebreak
 set nolist
 set cursorline
-set autoindent
-set cindent
+" set autoindent
+" set smartindent
 
 highlight Normal ctermbg=None
 highlight LineNr ctermfg=DarkGrey
