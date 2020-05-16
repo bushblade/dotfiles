@@ -1,6 +1,5 @@
 " Specify a directory for plugins
 call plug#begin('~/.config/nvim/plugged')
-Plug 'easymotion/vim-easymotion'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-fugitive'
 Plug 'mxw/vim-jsx'
@@ -21,7 +20,6 @@ Plug 'prettier/vim-prettier', {
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'justinmk/vim-sneak'
-" Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Basic settings
@@ -72,6 +70,9 @@ nnoremap S :%s//gi<Left><Left><Left>
 " Move selections up or down
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '<+1<CR>gv-gv
+
+" Airline theme
+let g:airline_theme='onedark'
 
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
@@ -230,4 +231,5 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 
+" coc auto indent and close bracket
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
