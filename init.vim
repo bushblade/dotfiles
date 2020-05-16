@@ -70,9 +70,6 @@ nnoremap S :%s//gi<Left><Left><Left>
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '<+1<CR>gv-gv
 
-" Airline theme
-let g:airline_theme='onedark'
-
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
 " autocmd vimenter * NERDTree
@@ -83,9 +80,15 @@ let NERDTreeShowHidden=1
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
-
+" Airline theme
+let g:airline_theme='onedark'
 "airlinefonts
 let g:airline_powerline_fonts = 1
+" remove the encoding part
+let g:airline_section_y=''
+" remove separators for empty sections
+let g:airline_skip_empty_sections = 1
+
 
 
 " stuff for coc below
