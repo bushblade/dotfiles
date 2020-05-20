@@ -33,3 +33,4 @@ bindkey jj vi-cmd-mode
 if [ -r ~/Dropbox/.ssh.zsh ]; then
     source ~/Dropbox/.ssh.zsh
 fi
+export PATH="$HOME/.deno/bin:$PATH"
