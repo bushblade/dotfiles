@@ -10,5 +10,14 @@
     "**/node_modules/**/.*/**",
     "**/.git/**"
   ],
-  "coc.preferences.formatOnType": true
+  "coc.preferences.formatOnType": true,
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "~/.config/nvim/plugged/vim-snippets/UltiSnips"
+  ],
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript"],
+    "typescript": ["javascript"]
+  }
 }
