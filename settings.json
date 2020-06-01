@@ -58,7 +58,6 @@
     }
   },
   "git.enableSmartCommit": true,
-  "editor.renderIndentGuides": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
