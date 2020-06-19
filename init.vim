@@ -22,6 +22,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'justinmk/vim-sneak'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'dkprice/vim-easygrep'
 call plug#end()
 
 " Basic settings
