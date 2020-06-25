@@ -1,6 +1,5 @@
 " Specify a directory for plugins
 call plug#begin('~/.config/nvim/plugged')
-Plug 'honza/vim-snippets'
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-fugitive'
 Plug 'mxw/vim-jsx'
