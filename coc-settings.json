@@ -13,6 +13,7 @@
   "coc.preferences.formatOnType": true,
   "snippets.ultisnips.directories": ["UltiSnips"],
   "snippets.extends": {
-    "javascriptreact": ["javascript"]
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"]
   }
 }

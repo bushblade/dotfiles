@@ -22,6 +22,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'justinmk/vim-sneak'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'dkprice/vim-easygrep'
+Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
 " Basic settings
