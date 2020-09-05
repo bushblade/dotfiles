@@ -23,6 +23,8 @@ Plug 'justinmk/vim-sneak'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'dkprice/vim-easygrep'
 Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'jparise/vim-graphql'
+Plug 'cespare/vim-toml'
 call plug#end()
 
 " Basic settings
