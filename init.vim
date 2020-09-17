@@ -14,9 +14,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'justinmk/vim-sneak'
@@ -80,10 +77,6 @@ map <C-n> :NERDTreeToggle<CR>
 " autocmd vimenter * NERDTree
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeShowHidden=1
-
-"Prettier format on save
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Airline theme
 let g:airline_theme='onedark'
