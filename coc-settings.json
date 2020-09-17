@@ -25,5 +25,9 @@
   "snippets.extends": {
     "javascriptreact": ["javascript"],
     "typescript": ["javascript"]
-  }
+  },
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "ultisnips"
+  ]
 }
