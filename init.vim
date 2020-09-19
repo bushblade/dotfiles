@@ -47,6 +47,7 @@ set wrap
 set linebreak
 set nolist
 set cursorline
+set cursorcolumn
 " set autoindent
 " set smartindent
 
