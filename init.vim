@@ -2,8 +2,9 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-fugitive'
-Plug 'mxw/vim-jsx'
+" Plug 'yuezk/vim-js'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -71,6 +72,12 @@ nnoremap S :%s//gi<Left><Left><Left>
 " Move selections up or down
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '<+1<CR>gv-gv
+
+" Fix indenting visual block
+vmap < <gv
+vmap > >gv
+" Vertically center document when entering insert mode
+autocmd InsertEnter * norm zz
 
 "Nerd Tree settings
 map <C-n> :NERDTreeToggle<CR>
