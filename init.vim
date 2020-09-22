@@ -29,6 +29,7 @@ colorscheme onedark
 filetype plugin on
 syntax on
 highlight Comment cterm=italic gui=italic
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 "Enable mouse
 set mouse=a
