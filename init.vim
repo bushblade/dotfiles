@@ -28,7 +28,7 @@ call plug#end()
 colorscheme onedark
 filetype plugin on
 syntax on
-highlight Comment cterm=italic
+highlight Comment cterm=italic gui=italic
 
 "Enable mouse
 set mouse=a
