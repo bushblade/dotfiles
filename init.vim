@@ -22,6 +22,7 @@ Plug 'ThePrimeagen/vim-be-good'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'jparise/vim-graphql'
 Plug 'cespare/vim-toml'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Basic settings
