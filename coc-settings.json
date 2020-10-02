@@ -27,8 +27,7 @@
     "typescript": ["javascript"]
   },
   "cSpell.language": "en-GB",
-  "cSpell.userWords": [
-    "repos",
-    "ultisnips"
-  ]
+  "cSpell.userWords": ["repos", "subgrid", "ultisnips"],
+  "signature.preferShownAbove": false,
+  "signature.target": "echo"
 }

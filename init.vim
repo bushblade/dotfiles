@@ -30,7 +30,6 @@ colorscheme onedark
 filetype plugin on
 syntax on
 highlight Comment cterm=italic gui=italic
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 "Enable mouse
 set mouse=a
@@ -83,10 +82,13 @@ vmap > >gv
 autocmd InsertEnter * norm zz
 
 "Nerd Tree settings
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 " autocmd vimenter * NERDTree
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let NERDTreeShowHidden=1
+" let NERDTreeShowHidden=1
+
+"Coc-explorer
+nmap <space>e :CocCommand explorer<CR>
 
 " Airline theme
 let g:airline_theme='onedark'
@@ -256,6 +258,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " My CoC settings ---------------------------------
+
 
 " coc auto indent and close bracket
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
