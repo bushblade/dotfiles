@@ -2,14 +2,11 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-fugitive'
-" Plug 'yuezk/vim-js'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
@@ -80,15 +77,6 @@ vmap < <gv
 vmap > >gv
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
-
-"Nerd Tree settings
-" map <C-n> :NERDTreeToggle<CR>
-" autocmd vimenter * NERDTree
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" let NERDTreeShowHidden=1
-
-"Coc-explorer
-nmap <space>e :CocCommand explorer<CR>
 
 " Airline theme
 let g:airline_theme='onedark'
@@ -243,7 +231,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " Show all diagnostics.
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
@@ -269,3 +257,6 @@ nnoremap <silent> <C-p> :<c-u>CocList files<cr>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"Coc-explorer
+nmap <space>e :CocCommand explorer<CR>
