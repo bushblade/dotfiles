@@ -29,5 +29,9 @@
   "cSpell.language": "en-GB",
   "cSpell.userWords": ["repos", "subgrid", "ultisnips"],
   "signature.preferShownAbove": false,
-  "signature.target": "echo"
+  "signature.target": "echo",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.keyMappings": {
+    "v": "open:vsplit"
+  }
 }
