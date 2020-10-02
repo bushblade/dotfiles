@@ -260,3 +260,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "Coc-explorer
 nmap <space>e :CocCommand explorer<CR>
+
+" CocSearch
+nmap <space>f :CocSearch<space>
