@@ -31,7 +31,9 @@
   "signature.preferShownAbove": false,
   "signature.target": "echo",
   "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
   "explorer.keyMappings": {
-    "v": "open:vsplit"
+    "v": "open:vsplit",
+    "<cr>": ["expandable?", "expand", "open"]
   }
 }
