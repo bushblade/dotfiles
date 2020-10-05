@@ -54,6 +54,7 @@ highlight LineNr ctermfg=DarkGrey
 
 " map jj to escape
 inoremap jj <Esc>
+inoremap kk <Esc>
 
 " Shortcutting split navigation
 map <C-h> <C-w>h
@@ -75,6 +76,7 @@ xnoremap J :move '<+1<CR>gv-gv
 " Fix indenting visual block
 vmap < <gv
 vmap > >gv
+
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
 
@@ -247,9 +249,9 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " My CoC settings ---------------------------------
 
-
 " coc auto indent and close bracket
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 " Using CocList
 " ctrl + p to launch CocList files
 nnoremap <silent> <C-p> :<c-u>CocList files<cr>
@@ -260,6 +262,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "Coc-explorer
 nmap <space>e :CocCommand explorer<CR>
+autocmd BufEnter * if (winnr('$') == 1 && &filetype == 'coc-explorer') | q | endif
 
 " CocSearch
 nmap <space>f :CocSearch<space>
