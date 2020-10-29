@@ -27,7 +27,13 @@
     "typescript": ["javascript"]
   },
   "cSpell.language": "en-GB",
-  "cSpell.userWords": ["repos", "subgrid", "ultisnips"],
+  "cSpell.userWords": [
+    "Slicemaster",
+    "placeholder",
+    "repos",
+    "subgrid",
+    "ultisnips"
+  ],
   "signature.preferShownAbove": false,
   "signature.target": "echo",
   "explorer.icon.enableNerdfont": true,
