@@ -8,7 +8,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ryanoasis/vim-devicons'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
@@ -27,6 +26,8 @@ colorscheme onedark
 filetype plugin on
 syntax on
 highlight Comment cterm=italic gui=italic
+highlight htmlArg cterm=italic
+" highlight jsxAttrib cterm=italic
 
 "Enable mouse
 set mouse=a
