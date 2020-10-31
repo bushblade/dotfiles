@@ -7,7 +7,6 @@ plugins=(git tmux gatsby)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# alias code="vscodium"
 alias r="ranger"
 alias x="exit"
 alias nv="nvim"
