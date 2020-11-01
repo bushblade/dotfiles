@@ -1,10 +1,7 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/home/will/.oh-my-zsh
 
-# oh-my-zsh-plugins
-plugins=(git tmux gatsby)
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
 
-source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 alias r="ranger"
