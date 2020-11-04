@@ -23,14 +23,12 @@ call plug#end()
 
 " Set up onedark theme
   if (has("nvim"))
-    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   endif
   if (has("termguicolors"))
     set termguicolors
   endif
 
-syntax on
 
 " onedark.vim override: Don't set a background color when running in a terminal;
 " just use the terminal's background color
@@ -45,6 +43,7 @@ if (has("autocmd") && !has("gui_running"))
   augroup END
 endif
 
+syntax on
 colorscheme onedark
 filetype plugin on
 highlight Comment cterm=italic gui=italic
