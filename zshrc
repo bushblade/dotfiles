@@ -12,6 +12,7 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
+alias ..="cd .."
 alias r="ranger"
 alias x="exit"
 alias nv="nvim"
