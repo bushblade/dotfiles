@@ -19,7 +19,8 @@
     "javascriptreact",
     "typescript.tsx",
     "graphql",
-    "html"
+    "html",
+    "vue"
   ],
   "snippets.ultisnips.directories": ["UltiSnips"],
   "snippets.extends": {
@@ -29,7 +30,10 @@
   "cSpell.language": "en-GB",
   "cSpell.userWords": [
     "Slicemaster",
+    "Slicemasters",
+    "destructure",
     "placeholder",
+    "qraphql",
     "repos",
     "subgrid",
     "ultisnips"

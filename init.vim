@@ -19,6 +19,8 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'jparise/vim-graphql'
 Plug 'cespare/vim-toml'
 Plug 'airblade/vim-gitgutter'
+Plug 'leafoftree/vim-svelte-plugin'
+Plug 'leafoftree/vim-vue-plugin'
 call plug#end()
 
 " Set up onedark theme
@@ -49,6 +51,12 @@ filetype plugin on
 highlight Comment cterm=italic gui=italic
 highlight htmlArg cterm=italic 
 " highlight jsxAttrib cterm=italic 
+
+" Vue plugin settings
+let g:vim_vue_plugin_load_full_syntax = 1
+let g:vim_vue_plugin_use_sass = 1
+let g:vim_vue_plugin_highlight_vue_attr = 1
+let g:vim_vue_plugin_highlight_vue_keyword = 1
 
 "Enable mouse
 set mouse=a
