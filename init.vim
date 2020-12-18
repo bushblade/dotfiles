@@ -21,8 +21,7 @@ Plug 'cespare/vim-toml'
 Plug 'airblade/vim-gitgutter'
 Plug 'leafoftree/vim-svelte-plugin'
 Plug 'leafoftree/vim-vue-plugin'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'HerringtonDarkholme/yats'
 call plug#end()
 
 " Set up onedark theme
@@ -49,7 +48,8 @@ endif
 
 syntax on
 colorscheme onedark
-filetype plugin on
+filetype on
+" filetype plugin on
 highlight Comment cterm=italic gui=italic
 highlight htmlArg cterm=italic 
 " highlight jsxAttrib cterm=italic 
@@ -298,3 +298,6 @@ autocmd BufEnter * if (winnr('$') == 1 && &filetype == 'coc-explorer') | q | end
 
 " CocSearch
 nmap <space>f :CocSearch<space>
+
+" Coc-yank
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
