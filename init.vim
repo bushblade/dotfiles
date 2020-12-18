@@ -21,6 +21,8 @@ Plug 'cespare/vim-toml'
 Plug 'airblade/vim-gitgutter'
 Plug 'leafoftree/vim-svelte-plugin'
 Plug 'leafoftree/vim-vue-plugin'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 " Set up onedark theme
