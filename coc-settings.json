@@ -1,4 +1,5 @@
 {
+  "codeLens.enable": true,
   "emmet.includeLanguages": {
     "vue": "html",
     "javascript": "javascriptreact",
@@ -36,14 +37,19 @@
     "deno",
     "destructure",
     "devtools",
+    "githubusername",
     "noopener",
     "noreferrer",
     "placeholder",
     "preact",
     "qraphql",
     "repos",
+    "snowpack",
     "subgrid",
-    "ultisnips"
+    "ultisnips",
+    "unselectable",
+    "whitesmoke",
+    "youtube"
   ],
   "signature.preferShownAbove": false,
   "signature.target": "echo",

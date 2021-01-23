@@ -78,6 +78,10 @@ set linebreak
 set nolist
 set cursorline
 set cursorcolumn
+set scrolloff=8
+set incsearch
+" set colorcolumn=100
+" set nohlsearch
 " set autoindent
 " set smartindent
 
