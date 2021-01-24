@@ -1,5 +1,4 @@
 {
-  "codeLens.enable": true,
   "emmet.includeLanguages": {
     "vue": "html",
     "javascript": "javascriptreact",

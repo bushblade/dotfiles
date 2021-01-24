@@ -40,3 +40,5 @@ if [ -r ~/Dropbox/.ssh.zsh ]; then
     source ~/Dropbox/.ssh.zsh
 fi
 export PATH="$HOME/.deno/bin:$PATH"
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

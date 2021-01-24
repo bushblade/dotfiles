@@ -285,6 +285,9 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " My CoC settings ---------------------------------
 
+" CocLens colour
+:hi CocCodeLens guifg=grey
+
 " coc auto indent and close bracket
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
