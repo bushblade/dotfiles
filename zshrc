@@ -1,5 +1,5 @@
 
-SAVEHIST=1000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -21,6 +21,9 @@ alias mv="mv -i"
 alias zshconfig='nvim ~/.zshrc'
 alias cl='clear'
 alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
+
+# cleanup orphaned packages
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 # powelevel10k theme
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
