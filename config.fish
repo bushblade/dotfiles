@@ -1,4 +1,5 @@
 set -gx EDITOR nvim
+set fish_greeting
 
 abbr -a r ranger
 abbr -a nv nvim
@@ -22,5 +23,5 @@ alias cl='clear'
 alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
 
 # cleanup orphaned packages
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+# alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
