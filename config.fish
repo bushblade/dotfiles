@@ -14,9 +14,6 @@ alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
 alias ..="cd .."
-alias r="ranger"
-alias x="exit"
-alias nv="nvim"
 alias rm="rm -i"
 alias mv="mv -i"
 alias cl='clear'
@@ -24,4 +21,6 @@ alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
 
 # cleanup orphaned packages
 # alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+starship init fish | source
 
