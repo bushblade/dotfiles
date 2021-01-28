@@ -18,6 +18,7 @@ alias rm="rm -i"
 alias mv="mv -i"
 alias cl='clear'
 alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
+alias ls='exa -la'
 
 # cleanup orphaned packages
 # alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
