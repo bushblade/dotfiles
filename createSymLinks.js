@@ -19,7 +19,7 @@ const links = [
 ];
 
 links.forEach(({ target, path }) => {
-  rs.symlinkSync(path.join(HOME, "dotfiles", target), path.join(HOME, path));
+  fs.symlinkSync(path.join(HOME, "dotfiles", target), path.join(HOME, path));
 });
 
 console.log("Sym links created!");

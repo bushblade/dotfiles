@@ -37,6 +37,7 @@
     "deno",
     "destructure",
     "devtools",
+    "dotfiles",
     "frontmatter",
     "githubusername",
     "noopener",
@@ -49,6 +50,7 @@
     "subgrid",
     "ultisnips",
     "unselectable",
+    "unsubscribe",
     "whitesmoke",
     "woodlore",
     "youtube"
