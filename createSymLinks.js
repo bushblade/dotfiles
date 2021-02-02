@@ -10,7 +10,7 @@ const links = [
   { target: 'kitty.conf', linkPath: '.config/kitty', file: 'kitty.conf' },
   { target: 'config.fish', linkPath: '.config/fish', file: 'config.fish' },
   { target: 'starship.toml', linkPath: '.config', file: 'starship.toml' },
-  { target: 'tmux.conf', file: '.tumux.conf' },
+  { target: 'tmux.conf', file: '.tmux.conf' },
   { target: 'zshrc', file: '.zshrc' },
   {
     target: 'coc-settings.json',
