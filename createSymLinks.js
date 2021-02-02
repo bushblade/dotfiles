@@ -28,7 +28,7 @@ const links = [
 
 links.forEach(({ target, linkPath, file }) => {
   // check if linkPath exists and create if it doesn't
-  if (!fs.existsSync(path.join(HOME, linkPath))) {
+  if (linkPath && !fs.existsSync(path.join(HOME, linkPath))) {
     fs.mkdirSync(path.join(HOME, linkPath), { recursive: true }, (err) => {
       if (err) throw err;
       console.log(`created directory: - ${HOME}/${linkPath}`);
