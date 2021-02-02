@@ -15,6 +15,8 @@
 - fd
 - tldr
 - cht.sh
+- node & npm
+- python & pip
 
 ### Change shell to fish
 
