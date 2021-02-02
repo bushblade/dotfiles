@@ -34,10 +34,16 @@ links.forEach(({ target, linkPath, file }) => {
       console.log(`created directory: - ${HOME}/${linkPath}`);
     });
   }
-  fs.symlinkSync(
-    path.join(HOME, "dotfiles", target),
-    path.join(HOME, linkPath, file)
-  );
+  const fullFilePath = linkPath
+    ? path.join(HOME, linkPath, file)
+    : path.join(HOME, file);
+
+  // check if file exists and remove if it does
+  const fileExists = fs.existsSync(fullFilePath);
+  if (fileExists) fs.unlinkSync(fullFilePath);
+
+  // create the symlink
+  fs.symlinkSync(path.join(HOME, "dotfiles", target), fullFilePath);
 });
 
 console.log("Sym links created!");
