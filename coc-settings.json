@@ -61,6 +61,7 @@
   "signature.preferShownAbove": false,
   "signature.target": "echo",
   "explorer.icon.enableNerdfont": true,
+  "explorer.file.autoReveal": true,
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings.global": {
     "v": "open:vsplit",

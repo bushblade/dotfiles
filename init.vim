@@ -23,6 +23,7 @@ Plug 'leafoftree/vim-svelte-plugin'
 Plug 'leafoftree/vim-vue-plugin'
 Plug 'HerringtonDarkholme/yats'
 Plug 'delphinus/vim-firestore'
+Plug 'jxnblk/vim-mdx-js'
 call plug#end()
 
 " Set up onedark theme
@@ -309,3 +310,6 @@ nmap <space>f :CocSearch<space>
 
 " Coc-yank
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+" Coc Explorer reveal
+nmap <space>r :call CocAction('runCommand', 'explorer.doAction', 'closest', ['reveal:0'], [['relative', 0, 'file']])<CR>
