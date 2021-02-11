@@ -24,6 +24,7 @@ Plug 'leafoftree/vim-vue-plugin'
 Plug 'HerringtonDarkholme/yats'
 Plug 'delphinus/vim-firestore'
 Plug 'jxnblk/vim-mdx-js'
+Plug 'knubie/vim-kitty-navigator'
 call plug#end()
 
 " Set up onedark theme
