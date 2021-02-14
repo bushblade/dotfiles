@@ -9,6 +9,7 @@
     - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
 - fish
 - ranger
+- nnn
 - starship
 - exa
 - bat
