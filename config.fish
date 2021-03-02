@@ -20,6 +20,7 @@ alias tkss='tmux kill-session -t'
 
 alias ..="cd .."
 # alias rm="rm -i"
+alias rm="trash"
 alias mv="mv -i"
 alias cl='clear'
 alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
@@ -40,13 +41,12 @@ set MANPATH $NPM_PACKAGES/share/man $MANPATH
 starship init fish | source
 
 # NNN trash instead of rm
-set NNN_TRASH trash
+set -gx NNN_TRASH 1
 
 # NNN cd on exit
 # Rename this file to match the name of the function
 # e.g. ~/.config/fish/functions/n.fish
 # or, add the lines to the 'config.fish' file.
-
 function n --wraps nnn --description 'support nnn quit and change directory'
     # Block nesting of nnn in subshells
     if test -n "$NNNLVL"
