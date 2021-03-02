@@ -39,6 +39,9 @@ set MANPATH $NPM_PACKAGES/share/man $MANPATH
 
 starship init fish | source
 
+# NNN trash instead of rm
+set NNN_TRASH trash
+
 # NNN cd on exit
 # Rename this file to match the name of the function
 # e.g. ~/.config/fish/functions/n.fish
@@ -76,3 +79,5 @@ function n --wraps nnn --description 'support nnn quit and change directory'
         rm $NNN_TMPFILE
     end
 end
+
+
