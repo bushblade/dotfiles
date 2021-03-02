@@ -5,16 +5,17 @@
 - neovim 
     - [ Plug ]( https://github.com/junegunn/vim-plug )
 - kitty
-- tmux 
-    - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
+- ~~tmux~~
+    - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
 - fish
-- ranger
+- ~~ranger~~
 - nnn
 - starship
 - exa
 - bat
 - fd
 - tldr
+- ripgrep
 - cht.sh
 - node & npm
 - python & pip
@@ -27,10 +28,10 @@ chsh -s /bin/fish
 
 ### Create symbolic links
 
-make file executable
+make createSymLinks.js executable
 
 ```
-chmod +x createSymLinks.json
+chmod +x createSymLinks.js
 ```
 
 run script
@@ -39,8 +40,13 @@ run script
 ./createSymLinks.js
 ```
 
-AutoStart for compton...
+### No sudo on global npm packages
+[ Detailed instructions ](https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md)
 
-```bash
-sh -c picom --config ~/.config/compton.conf -b
 ```
+mkdir ~/.npm-packages
+npm config set prefix '~/.npm-packages'
+```
+
+
+
