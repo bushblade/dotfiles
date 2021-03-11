@@ -6,27 +6,26 @@ abbr -a nv nvim
 abbr -a x exit
 abbr -a cat bat
 abbr -a find fd
+abbr -a .. cd ..
+abbr -a rm trash
+abbr -a mv mv -i
+abbr -a cl clear
+abbr -a ignorenode attr -s com.dropbox.ignored -V 1 node_modules
+abbr -a ls exa -l
+abbr -a la exa -la
+abbr -a icat kitty +kitten icat
 
 # cleanup orphaned packages
 abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
 
 # tmux aliases
-alias ta='tmux attach -t'
-alias tad='tmux attach -d -t'
-alias ts='tmux new-session -s'
-alias tl='tmux list-sessions'
-alias tksv='tmux kill-server'
-alias tkss='tmux kill-session -t'
+abbr -a ta tmux attach -t
+abbr -a tad tmux attach -d -t
+abbr -a ts tmux new-session -s
+abbr -a tl tmux list-sessions
+abbr -a tksv tmux kill-server
+abbr -a tkss tmux kill-session -t
 
-alias ..="cd .."
-# alias rm="rm -i"
-alias rm="trash"
-alias mv="mv -i"
-alias cl='clear'
-alias ignorenode='attr -s com.dropbox.ignored -V 1 node_modules'
-alias ls='exa -l'
-alias la='exa -la'
-alias icat='kitty +kitten icat'
 
 # no sudo on npm global packages
 # instructions at
