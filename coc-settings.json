@@ -53,6 +53,7 @@
     "presets",
     "qraphql",
     "repos",
+    "serializers",
     "signin",
     "snowpack",
     "subgrid",
