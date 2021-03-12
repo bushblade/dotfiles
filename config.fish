@@ -1,5 +1,6 @@
 set -gx EDITOR nvim
 set fish_greeting
+fish_vi_key_bindings
 
 abbr -a r ranger
 abbr -a nv nvim
