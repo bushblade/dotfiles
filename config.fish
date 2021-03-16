@@ -15,6 +15,7 @@ abbr -a ignorenode attr -s com.dropbox.ignored -V 1 node_modules
 abbr -a ls exa -l
 abbr -a la exa -la
 abbr -a icat kitty +kitten icat
+abbr -a csr git clone https://github.com/bushblade/react-snowpack-starter.git
 
 # cleanup orphaned packages
 abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
