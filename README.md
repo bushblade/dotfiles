@@ -5,6 +5,7 @@
 - neovim 
     - [ Plug ]( https://github.com/junegunn/vim-plug )
 - kitty
+    - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator)
 - ~~tmux~~
     - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
 - fish
