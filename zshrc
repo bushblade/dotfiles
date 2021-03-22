@@ -59,6 +59,9 @@ n ()
     fi
 }
 
+# nnn trash instead of rm
+NNN_TRASH=1 
+
 
 # powelevel10k theme
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
