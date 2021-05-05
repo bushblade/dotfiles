@@ -24,6 +24,8 @@ Plug 'delphinus/vim-firestore'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'knubie/vim-kitty-navigator'
 Plug 'Stautob/vim-fish'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'isobit/vim-caddyfile'
 call plug#end()
 
 " Set up onedark theme
@@ -40,7 +42,7 @@ call plug#end()
 " `gui` is the hex color code used in GUI mode/nvim true-color mode
 " `cterm` is the color code used in 256-color mode
 " `cterm16` is the color code used in 16-color mode
-if (has("autocmd") && !has("gui_running"))
+if (has("autocmd") && !exists('g:neovide'))
   augroup colorset
     autocmd!
     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
@@ -59,6 +61,10 @@ let g:vim_vue_plugin_load_full_syntax = 1
 let g:vim_vue_plugin_use_sass = 1
 let g:vim_vue_plugin_highlight_vue_attr = 1
 let g:vim_vue_plugin_highlight_vue_keyword = 1
+
+" Neovide specific settings
+set guifont=Victor\ Mono\ Nerd\ Font:h15
+let g:neovide_transparency=0.9
 
 "Enable mouse
 set mouse=a
@@ -127,5 +133,4 @@ let g:airline_skip_empty_sections = 1
 
 " source coc settings
 so $HOME/dotfiles/coc.vim
-
 
