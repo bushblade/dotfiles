@@ -26,6 +26,7 @@ Plug 'knubie/vim-kitty-navigator'
 Plug 'Stautob/vim-fish'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'isobit/vim-caddyfile'
+Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Set up onedark theme
@@ -133,4 +134,7 @@ let g:airline_skip_empty_sections = 1
 
 " source coc settings
 so $HOME/dotfiles/coc.vim
+
+" vim-closetag
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
