@@ -26,8 +26,13 @@ const links = [
   { target: 'rc.conf', linkPath: '.config/ranger', file: 'rc.conf' },
   {
     target: 'alacritty.yml',
-    linkPath: '.config/alacritty/alacritty.yml',
+    linkPath: '.config/alacritty',
     file: 'alacritty.yml',
+  },
+  {
+    target: './snippets/javascript.snippets',
+    linkPath: './config/coc/ultisnips',
+    file: 'javascript.snippets',
   },
 ]
 
