@@ -76,6 +76,12 @@ set relativenumber
 " yank to system keyboard
 set clipboard=unnamedplus
 
+" disable netrw banner
+let g:netrw_banner=0
+" netrw tree view
+let g:netrw_liststyle=3
+
+" search ignores casing unless upper case is used
 set smartcase
 set tabstop=2 shiftwidth=2 expandtab
 set number
@@ -136,5 +142,5 @@ let g:airline_skip_empty_sections = 1
 so $HOME/dotfiles/coc.vim
 
 " vim-closetag
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js,*.tsx,*.vue"
 

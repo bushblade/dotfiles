@@ -17,6 +17,7 @@ abbr -a la exa -la
 abbr -a icat kitty +kitten icat
 abbr -a csr git clone https://github.com/bushblade/react-snowpack-starter.git
 abbr -a tree tree -C
+abbr -a info info --vi-keys
 
 # cleanup orphaned packages
 abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
