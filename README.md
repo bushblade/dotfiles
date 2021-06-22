@@ -28,18 +28,16 @@
 chsh -s /bin/fish
 ```
 
-### Create symbolic links
-
-make createSymLinks.js executable
+### Clone the repo
 
 ```
-chmod +x createSymLinks.js
+git clone https://github.com/bushblade/dotfiles.git dotfiles
 ```
-
-run script
+### Use GNU stow to create symlinks to config files
 
 ```
-./createSymLinks.js
+cd dotfiles
+stow */
 ```
 
 ### No sudo on global npm packages
@@ -52,7 +50,7 @@ npm config set prefix '~/.npm-packages'
 
 ### TODO
 
-- Replace createSymLinks with [ stow ](https://www.gnu.org/software/stow/)
+- ✅ Replace createSymLinks with [ stow ](https://www.gnu.org/software/stow/) 
 
 
 
