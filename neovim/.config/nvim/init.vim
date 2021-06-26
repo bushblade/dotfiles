@@ -63,6 +63,9 @@ let g:vim_vue_plugin_use_sass = 1
 let g:vim_vue_plugin_highlight_vue_attr = 1
 let g:vim_vue_plugin_highlight_vue_keyword = 1
 
+" Highlight JSDocs
+let g:javascript_plugin_jsdoc = 1
+
 " Neovide specific settings
 set guifont=Victor\ Mono\ Nerd\ Font:h15
 let g:neovide_transparency=0.9
@@ -125,6 +128,9 @@ xnoremap J :move '<+1<CR>gv-gv
 " Fix indenting visual block
 vmap < <gv
 vmap > >gv
+
+" map escape to normal mode in terminal mode
+tnoremap <Esc> <C-\><C-n>
 
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
@@ -326,3 +332,6 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
 " Coc Explorer reveal
 nmap <space>r :call CocAction('runCommand', 'explorer.doAction', 'closest', ['reveal:0'], [['relative', 0, 'file']])<CR>
+
+" JSDocs generate 
+map <space>d :CocCommand docthis.documentThis <cr>
