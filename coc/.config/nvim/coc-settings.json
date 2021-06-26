@@ -81,5 +81,6 @@
   "explorer.keyMappings.global": {
     "v": "open:vsplit",
     "<cr>": ["expandable?", "expand", "open"]
-  }
+  },
+  "tsserver.implicitProjectConfig.checkJs": true
 }
