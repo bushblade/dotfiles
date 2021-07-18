@@ -76,11 +76,10 @@
   "signature.preferShownAbove": false,
   "signature.target": "echo",
   "explorer.icon.enableNerdfont": true,
-  "explorer.file.autoReveal": true,
+  "explorer.file.reveal.auto": true,
   "explorer.previewAction.onHover": false,
   "explorer.keyMappings.global": {
     "v": "open:vsplit",
     "<cr>": ["expandable?", "expand", "open"]
-  },
-  "tsserver.implicitProjectConfig.checkJs": true
+  }
 }
