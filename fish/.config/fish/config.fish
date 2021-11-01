@@ -46,10 +46,9 @@ abbr -a rm trash
 abbr -a mv mv -i
 abbr -a cl clear
 abbr -a ignorenode attr -s com.dropbox.ignored -V 1 node_modules
-abbr -a ls exa -l
-abbr -a la exa -la
+abbr -a ls exa -l --icons
+abbr -a la exa -la --icons
 abbr -a icat kitty +kitten icat
-abbr -a csr git clone https://github.com/bushblade/react-snowpack-starter.git
 abbr -a tree exa -T --icons
 abbr -a info info --vi-keys
 
