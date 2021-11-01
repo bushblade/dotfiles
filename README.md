@@ -2,13 +2,15 @@
 
 ### Install packages
 
-- neovim 
-    - [ Plug ]( https://github.com/junegunn/vim-plug )
+- neovim
+  - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
 - kitty
-    - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator)
+  - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator)
 - ~~tmux~~
-    - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
+  - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
 - fish
+  - fisher
+  - z
 - ~~ranger~~
 - nnn
 - starship
@@ -33,6 +35,7 @@ chsh -s /bin/fish
 ```
 git clone https://github.com/bushblade/dotfiles.git dotfiles
 ```
+
 ### Use GNU stow to create symlinks to config files
 
 ```
@@ -41,6 +44,7 @@ stow */
 ```
 
 ### No sudo on global npm packages
+
 [ Detailed instructions ](https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md)
 
 ```
@@ -50,7 +54,4 @@ npm config set prefix '~/.npm-packages'
 
 ### TODO
 
-- ✅ Replace createSymLinks with [ stow ](https://www.gnu.org/software/stow/) 
-
-
-
+- ✅ Replace createSymLinks with [ stow ](https://www.gnu.org/software/stow/)
