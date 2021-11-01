@@ -51,7 +51,3 @@ stow */
 mkdir ~/.npm-packages
 npm config set prefix '~/.npm-packages'
 ```
-
-### TODO
-
-- ✅ Replace createSymLinks with [ stow ](https://www.gnu.org/software/stow/)
