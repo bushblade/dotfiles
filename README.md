@@ -26,19 +26,19 @@
 
 ### Change shell to fish
 
-```
+```bash
 chsh -s /bin/fish
 ```
 
 ### Clone the repo
 
-```
+```bash
 git clone https://github.com/bushblade/dotfiles.git dotfiles
 ```
 
 ### Use GNU stow to create symlinks to config files
 
-```
+```bash
 cd dotfiles
 stow */
 ```
@@ -47,7 +47,7 @@ stow */
 
 [ Detailed instructions ](https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md)
 
-```
+```bash
 mkdir ~/.npm-packages
 npm config set prefix '~/.npm-packages'
 ```
