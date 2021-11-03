@@ -2,27 +2,27 @@
 
 ### Install packages
 
-- neovim
+- [ neovim ](https://neovim.io/)
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
-- kitty
+- [ kitty ](https://sw.kovidgoyal.net/kitty/)
   - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator)
 - ~~tmux~~
   - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
-- fish
-  - fisher
-  - z
+- [ fish ](https://fishshell.com/)
+  - [ fisher ](https://github.com/jorgebucaran/fisher)
+  - [ z ](https://github.com/jethrokuan/z)
 - ~~ranger~~
-- nnn
-- starship
-- exa
-- bat
-- fd
-- tldr
-- ripgrep
-- cht.sh
-- node & npm
-- python & pip
-- stow
+- [ nnn ](https://github.com/jarun/nnn)
+- [ starship ](https://starship.rs/)
+- [ exa ](https://the.exa.website/introduction)
+- [ bat ](https://github.com/sharkdp/bat)
+- [ fd ](https://github.com/sharkdp/fd)
+- [ tldr ](https://tldr.sh/)
+- [ ripgrep ](https://github.com/BurntSushi/ripgrep)
+- [ cht.sh ](http://cht.sh/)
+- [ node & npm ](https://nodejs.org/en/)
+- [ python ](https://www.python.org/) & [ pip ](https://pypi.org/project/pip/)
+- [ stow ](https://www.gnu.org/software/stow/)
 
 ### Change shell to fish
 
