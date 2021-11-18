@@ -198,12 +198,46 @@ font:
   #   white:   '#ffffff'
 
 
-# colors onedark
+# TokyoNight Alacritty Colors
 colors:
   # Default colors
   primary:
-    background: '0x1e2127'
-    foreground: '0xabb2bf'
+    background: '0x1a1b26'
+    foreground: '0xc0caf5'
+
+  # Normal colors
+  normal:
+    black:   '0x15161E'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan:    '0x7dcfff'
+    white:   '0xa9b1d6'
+
+  # Bright colors
+  bright:
+    black:   '0x414868'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan:    '0x7dcfff'
+    white:   '0xc0caf5'
+
+  indexed_colors:
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }
+
+
+# colors onedark
+# colors:
+  # Default colors
+  # primary:
+  #   background: '0x1e2127'
+  #   foreground: '0xabb2bf'
 
     # Bright and dim foreground colors
     #
@@ -211,7 +245,7 @@ colors:
     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
     # is `false`, the normal foreground color will be used.
     #dim_foreground: '0x9a9a9a'
-    bright_foreground: '0xe6efff'
+    # bright_foreground: '0xe6efff'
 
   # Cursor colors
   #
@@ -222,40 +256,40 @@ colors:
   #  cursor: '0xffffff'
 
   # Normal colors
-  normal:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0x828791'
+  # normal:
+  #   black:   '0x1e2127'
+  #   red:     '0xe06c75'
+  #   green:   '0x98c379'
+  #   yellow:  '0xd19a66'
+  #   blue:    '0x61afef'
+  #   magenta: '0xc678dd'
+  #   cyan:    '0x56b6c2'
+  #   white:   '0x828791'
 
   # Bright colors
-  bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xe6efff'
+  # bright:
+  #   black:   '0x5c6370'
+  #   red:     '0xe06c75'
+  #   green:   '0x98c379'
+  #   yellow:  '0xd19a66'
+  #   blue:    '0x61afef'
+  #   magenta: '0xc678dd'
+  #   cyan:    '0x56b6c2'
+  #   white:   '0xe6efff'
 
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  dim:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0x828791'
+  # dim:
+  #   black:   '0x1e2127'
+  #   red:     '0xe06c75'
+  #   green:   '0x98c379'
+  #   yellow:  '0xd19a66'
+  #   blue:    '0x61afef'
+  #   magenta: '0xc678dd'
+  #   cyan:    '0x56b6c2'
+  #   white:   '0x828791'
 
 # Colors (Tomorrow Night Bright)
 #colors:
