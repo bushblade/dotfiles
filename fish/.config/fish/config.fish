@@ -51,6 +51,7 @@ abbr -a la exa -la --icons
 abbr -a icat kitty +kitten icat
 abbr -a tree exa -T --icons
 abbr -a info info --vi-keys
+abbr -a lg lazygit
 
 # cleanup orphaned packages
 abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
