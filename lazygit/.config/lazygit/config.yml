@@ -1,0 +1,9 @@
+gui:
+  theme:
+    activeBorderColor:
+    - blue
+    inactiveBorderColor:
+    - black
+    selectedRangeBgColor:
+    - reverse
+    - black
