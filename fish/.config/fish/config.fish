@@ -75,6 +75,9 @@ set PATH $PATH $NPM_PACKAGES/bin
 
 set MANPATH $NPM_PACKAGES/share/man $MANPATH  
 
+# add deno packages to PATH
+export PATH="$HOME/.deno/bin:$PATH"
+
 starship init fish | source
 
 # NNN trash instead of rm
