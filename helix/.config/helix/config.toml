@@ -1,0 +1,18 @@
+theme = "dracula"
+
+[editor]
+line-number = "relative"
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+
+[keys.insert]
+j = { j = "normal_mode" } # Maps `jj` to exit insert mode
+k= { k = "normal_mode" } # Maps `kk` to exit insert mode
