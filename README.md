@@ -23,6 +23,8 @@
 - [ node & npm ](https://nodejs.org/en/)
 - [ python ](https://www.python.org/) & [ pip ](https://pypi.org/project/pip/)
 - [ stow ](https://www.gnu.org/software/stow/)
+- [lazygit](https://github.com/jesseduffield/lazygit)
+  - [git-delta](https://github.com/dandavison/delta)
 
 ### Change shell to fish
 
