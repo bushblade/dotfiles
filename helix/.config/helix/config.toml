@@ -1,8 +1,8 @@
-theme = "dracula"
+theme = "tokyonight"
 
 [editor]
 line-number = "relative"
-true-color = true
+# true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
