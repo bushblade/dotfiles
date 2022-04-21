@@ -121,4 +121,9 @@ function n --wraps nnn --description 'support nnn quit and change directory'
     end
 end
 
-
+# function to convert all jpg images in directory to webp
+function imgs_to_webp
+ for file in *.jpg *.png
+      cwebp -q 80 $file -o (basename $file | sed 's/\(.*\)\..*/\1/').webp
+  end
+end
