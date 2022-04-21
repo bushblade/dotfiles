@@ -52,6 +52,7 @@ abbr -a icat kitty +kitten icat
 abbr -a tree exa -T --icons
 abbr -a info info --vi-keys
 abbr -a lg lazygit
+abbr -a exa exa --icons
 
 # cleanup orphaned packages
 abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
@@ -127,3 +128,4 @@ function imgs_to_webp
       cwebp -q 80 $file -o (basename $file | sed 's/\(.*\)\..*/\1/').webp
   end
 end
+
