@@ -78,6 +78,10 @@ set MANPATH $NPM_PACKAGES/share/man $MANPATH
 # add deno packages to PATH
 export PATH="$HOME/.deno/bin:$PATH"
 
+# add cargo packages to PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
 starship init fish | source
 
 # NNN trash instead of rm
