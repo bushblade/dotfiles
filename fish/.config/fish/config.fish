@@ -69,18 +69,15 @@ abbr -a tkss tmux kill-session -t
 # instructions at
 # https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md
 
-set NPM_PACKAGES "$HOME/.npm-packages"
+# Add npm deno and cargo packages to PATH
+set NPM_PACKAGES "$HOME/.npm-packages/bin"
+set DENO_PACKAGES "$HOME/.deno/bin"
+set CARGO_PACKAGES "$HOME/.cargo/bin"
 
-set PATH $PATH $NPM_PACKAGES/bin
+set PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES
 
+# man pages for npm packages
 set MANPATH $NPM_PACKAGES/share/man $MANPATH  
-
-# add deno packages to PATH
-export PATH="$HOME/.deno/bin:$PATH"
-
-# add cargo packages to PATH
-export PATH="$HOME/.cargo/bin:$PATH"
-
 
 starship init fish | source
 

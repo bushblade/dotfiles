@@ -25,6 +25,9 @@
 - [ stow ](https://www.gnu.org/software/stow/)
 - [lazygit](https://github.com/jesseduffield/lazygit)
   - [git-delta](https://github.com/dandavison/delta)
+- [cwebp](https://developers.google.com/speed/webp/docs/cwebp)
+
+set PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES
 
 ### Change shell to fish
 
