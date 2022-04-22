@@ -12,7 +12,7 @@
   - [ fisher ](https://github.com/jorgebucaran/fisher)
   - [ z ](https://github.com/jethrokuan/z)
 - ~~ranger~~
-- [ nnn ](https://github.com/jarun/nnn)
+- [ nnn-nerd ](https://github.com/jarun/nnn)
 - [ starship ](https://starship.rs/)
 - [ exa ](https://the.exa.website/introduction)
 - [ bat ](https://github.com/sharkdp/bat)
