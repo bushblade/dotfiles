@@ -56,3 +56,23 @@ stow */
 mkdir ~/.npm-packages
 npm config set prefix '~/.npm-packages'
 ```
+
+### Setup file and image previews in nnn
+
+[Detailed instructions](https://github.com/jarun/nnn/tree/master/plugins)
+
+install plugins for nnn
+
+```bash
+curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
+```
+
+Add the following to `~/.profile`
+
+```bash
+# previews in nnn
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_PLUG='p:preview-tui;'
+```
+
+Activate the plugin in nnn after launching nnn by hitting `;p`
