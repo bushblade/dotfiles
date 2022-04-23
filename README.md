@@ -27,7 +27,7 @@
   - [git-delta](https://github.com/dandavison/delta)
 - [cwebp](https://developers.google.com/speed/webp/docs/cwebp)
 
-set PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES
+**... and a nice patched nerd font!** - [Victor Mono](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/VictorMono/Light/complete/Victor%20Mono%20Light%20Nerd%20Font%20Complete.ttf)
 
 ### Change shell to fish
 
