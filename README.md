@@ -72,7 +72,8 @@ Add the following to `~/.profile`
 ```bash
 # previews in nnn
 export NNN_FIFO=/tmp/nnn.fifo
-export NNN_PLUG='p:preview-tui;'
+export NNN_PLUG='p:preview-tui;g:getplugs'
 ```
 
 Activate the plugin in nnn after launching nnn by hitting `;p`
+Update plugins with `;g`
