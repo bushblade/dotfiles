@@ -11,7 +11,6 @@
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher)
   - [ z ](https://github.com/jethrokuan/z)
-- ~~ranger~~
 - [ nnn-nerd ](https://github.com/jarun/nnn)
 - [ starship ](https://starship.rs/)
 - [ exa ](https://the.exa.website/introduction)
