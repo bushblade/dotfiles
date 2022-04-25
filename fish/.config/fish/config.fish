@@ -77,7 +77,7 @@ set CARGO_PACKAGES "$HOME/.cargo/bin"
 set PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES
 
 # man pages for npm packages
-set MANPATH $NPM_PACKAGES/share/man $MANPATH  
+set MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
 
 starship init fish | source
 
