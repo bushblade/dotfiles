@@ -73,16 +73,22 @@ abbr -a tkss tmux kill-session -t
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
+set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES
 
-set PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES
+# User most for pager with colours
+set -x PAGER most
 
 # man pages for npm packages
-set MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
+set -x MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
 
 starship init fish | source
 
 # NNN trash instead of rm
 set -gx NNN_TRASH 1
+
+# nnn splugins
+set -x NNN_FIFO /tmp/nnn.fifo
+set -x NNN_PLUG 'p:preview-tui;g:getplugs;o:organize;'
 
 # NNN cd on exit
 # Rename this file to match the name of the function
