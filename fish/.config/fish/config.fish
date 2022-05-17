@@ -77,7 +77,7 @@ set GO_PACKAGES "$HOME/go/bin"
 set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GO_PACKAGES
 
 # User most for pager with colours
-set -x PAGER most
+# set -x PAGER most
 
 # man pages for npm packages
 set -x MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
