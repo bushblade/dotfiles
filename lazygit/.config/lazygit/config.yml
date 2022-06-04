@@ -1,4 +1,7 @@
 gui:
+  sidePanelWidth: 0.2 # number from 0 to 1
+  parseEmoji: true
+  showIcons: true
   theme:
     activeBorderColor:
     - blue
