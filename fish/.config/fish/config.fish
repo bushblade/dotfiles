@@ -73,8 +73,8 @@ abbr -a tkss tmux kill-session -t
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
-set GO_PACKAGES "$HOME/go/bin"
-set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GO_PACKAGES
+set -x GOPATH "$HOME/.go/bin"
+set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH
 
 # User most for pager with colours
 # set -x PAGER most
