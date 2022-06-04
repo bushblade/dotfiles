@@ -2,17 +2,19 @@
 
 ### Install packages
 
-- [ neovim ](https://neovim.io/)
+- [ neovim ](https://neovim.io/) Editor and IDE
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
-- [ kitty ](https://sw.kovidgoyal.net/kitty/)
-  - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator)
+- [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
+  - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
+    between Vim splits and kitty panes
 - ~~tmux~~
   - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
 - [ fish ](https://fishshell.com/)
-  - [ fisher ](https://github.com/jorgebucaran/fisher)
-  - [ z ](https://github.com/jethrokuan/z)
-- [ nnn-nerd ](https://github.com/jarun/nnn)
-- [ starship ](https://starship.rs/)
+  - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
+  - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
+- [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
+  with icons
+- [ starship ](https://starship.rs/) Prompt
 - [ exa ](https://the.exa.website/introduction)
 - [ bat ](https://github.com/sharkdp/bat)
 - [ fd ](https://github.com/sharkdp/fd)
@@ -24,7 +26,8 @@
 - [ stow ](https://www.gnu.org/software/stow/)
 - [lazygit](https://github.com/jesseduffield/lazygit)
   - [git-delta](https://github.com/dandavison/delta)
-- [cwebp](https://developers.google.com/speed/webp/docs/cwebp)
+- [cwebp](https://developers.google.com/speed/webp/docs/cwebp) Convert images to
+  webp format
 - [most](https://github.com/FauxFaux/most-pager)
 
 **... and a nice patched nerd font!** - [Victor Mono](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/VictorMono/Light/complete/Victor%20Mono%20Light%20Nerd%20Font%20Complete.ttf)
