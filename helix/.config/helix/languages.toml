@@ -1,0 +1,4 @@
+[[language]]
+name = "eslint"
+file-types = ["javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue" "javascript", "typescript", "javascriptreact", "typescriptreact"]"
+language-server = { command = "vscode-eslint-language-server", args = "--stdio"}
