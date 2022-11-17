@@ -70,12 +70,13 @@ abbr -a tkss tmux kill-session -t
 # instructions at
 # https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md
 
-# Add npm deno and cargo packages to PATH
+# Add npm, lua, deno and cargo packages to PATH
+set LUAROCKS "$HOME/.luarocks/bin"
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
 set -x GOPATH "$HOME/.go/bin"
-set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH
+set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS
 
 # User most for pager with colours
 # set -x PAGER most
