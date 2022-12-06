@@ -1,3 +1,4 @@
+mtnm - move to next monitor                                      AUR
 alacritty                            0.11.0-1                    community  6.5 MB
 albert                               0.17.6-1                    AUR        5.2 MB
 autopep8                             1:1.7.1-1                   community  377.3 kB
@@ -21,8 +22,6 @@ exa                                  0.10.1-6                    community  875.
 exercism-bin                         3.0.13-2                    AUR        10.5 MB
 fd                                   8.5.2-1                     community  3.6 MB
 firefox                              107.0-1                     extra      249.0 MB
-firefox-i18n-en-gb                   107.0-1                     extra      520.2 kB
-firefox-i18n-en-us                   107.0-1                     extra      499.2 kB
 fish                                 3.5.1-1                     community  15.2 MB
 fisher                               4.4.3-1                     community  18.9 kB
 gimp                                 2.10.32-2                   extra      118.5 MB
@@ -34,11 +33,6 @@ gparted                              1.4.0-1                     extra      7.5�
 grapejuice                           7.2.0-1                     AUR        1.0 MB
 inkscape                             1.2.1-8                     extra      173.6 MB
 insomnia                             2022.6.0-2                  AUR        389.5 MB
-jdk-openjdk                          19.0.1.u10-3                extra      97.6 MB
-jdk8-openjdk                         8.352.u08-1                 extra      40.2 MB
-jre11-openjdk-headless               11.0.17.u1-1                extra      167.5 MB
-jre8-openjdk                         8.352.u08-1                 extra      425.4 kB
-jre8-openjdk-headless                8.352.u08-1                 extra      104.0 MB
 kitty                                0.26.5-1                    community  24.0 MB
 lazygit                              0.35-1                      community  15.8 MB
 lua-language-server                  3.6.2-1                     community  18.8 MB
