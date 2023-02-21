@@ -1,4 +1,3 @@
-
 import re
 
 from kittens.tui.handler import result_handler
