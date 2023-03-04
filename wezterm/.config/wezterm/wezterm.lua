@@ -13,7 +13,7 @@ return {
 	font = wezterm.font("Victor Mono Nerd Font"),
 	window_background_opacity = 0.9,
 	keys = {
-		{ key = "s", mods = "SHIFT|CTRL", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{ key = "x", mods = "SHIFT|CTRL", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "v", mods = "SHIFT|CTRL", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 		{ key = "H", mods = "SHIFT|CTRL", action = act.ActivatePaneDirection("Left") },
 		{ key = "LeftArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Left", 1 }) },
@@ -30,6 +30,20 @@ return {
 			event = { Up = { streak = 1, button = "Left" } },
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.OpenLinkAtMouseCursor,
+		},
+	},
+	hyperlink_rules = {
+		-- Linkify things that look like URLs and the host has a TLD name.
+		-- Compiled-in default. Used if you don't specify any hyperlink_rules.
+		{
+			regex = "\\b\\w+://[\\w.-]+\\.[a-z]{2,15}\\S*\\b",
+			format = "$0",
+		},
+
+		-- Linkify http://localhost:<port> links
+		{
+			regex = "\\bhttp://localhost:(\\d+)\\b",
+			format = "http://localhost:$1",
 		},
 	},
 }
