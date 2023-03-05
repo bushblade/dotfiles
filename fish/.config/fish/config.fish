@@ -33,6 +33,8 @@
  set -g fish_pager_color_description $comment
  set -g fish_pager_color_selected_background --background=$selection
 
+# set this to enable undercurls in Nvim in Wezterm
+set -gx TERM wezterm
 set -gx EDITOR nvim
 set fish_greeting
 fish_vi_key_bindings
@@ -136,4 +138,5 @@ function imgs_to_webp
       cwebp -q 80 $file -o (basename $file | sed 's/\(.*\)\..*/\1/').webp
   end
 end
+
 
