@@ -15,13 +15,13 @@ return {
 	keys = {
 		{ key = "x", mods = "SHIFT|CTRL", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "v", mods = "SHIFT|CTRL", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-		{ key = "H", mods = "SHIFT|CTRL", action = act.ActivatePaneDirection("Left") },
+		{ key = "h", mods = "CTRL", action = act.ActivatePaneDirection("Left") },
 		{ key = "LeftArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Left", 1 }) },
-		{ key = "L", mods = "SHIFT|CTRL", action = act.ActivatePaneDirection("Right") },
+		{ key = "l", mods = "CTRL", action = act.ActivatePaneDirection("Right") },
 		{ key = "RightArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Right", 1 }) },
-		{ key = "K", mods = "SHIFT|CTRL", action = act.ActivatePaneDirection("Up") },
+		{ key = "k", mods = "CTRL", action = act.ActivatePaneDirection("Up") },
 		{ key = "UpArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Up", 1 }) },
-		{ key = "J", mods = "SHIFT|CTRL", action = act.ActivatePaneDirection("Down") },
+		{ key = "j", mods = "CTRL", action = act.ActivatePaneDirection("Down") },
 		{ key = "DownArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Down", 1 }) },
 	},
 	mouse_bindings = {
