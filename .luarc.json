@@ -2,5 +2,8 @@
     "workspace.checkThirdParty": false,
     "diagnostics.globals": [
         "wezterm"
+    ],
+    "diagnostics.disable": [
+        "undefined-field"
     ]
 }
