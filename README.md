@@ -4,6 +4,7 @@
 
 - [ neovim ](https://neovim.io/) Editor and IDE
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
+- [ Wezterm ](https://wezfurlong.org/wezterm/) Terminal emulator
 - [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
   - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
     between Vim splits and kitty panes
