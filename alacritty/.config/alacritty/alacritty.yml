@@ -2,7 +2,7 @@ window:
   dimensions:
     columns: 226
     lines: 56
-  opacity: 0.9
+  opacity: 0.98
   padding:
     x: 0
     y: 0
