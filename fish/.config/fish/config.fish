@@ -80,6 +80,11 @@ set CARGO_PACKAGES "$HOME/.cargo/bin"
 set -x GOPATH "$HOME/.go/bin"
 set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS
 
+
+if test -e "$HOME/.config/fish/secret.fish"
+  source "$HOME/.config/fish/secret.fish"
+end
+
 # User most for pager with colours
 # set -x PAGER most
 
