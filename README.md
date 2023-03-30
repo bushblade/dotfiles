@@ -8,8 +8,8 @@
 - [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
   - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
     between Vim splits and kitty panes
-- ~~tmux~~
-  - ~~[ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)~~
+- tmux
+  - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
