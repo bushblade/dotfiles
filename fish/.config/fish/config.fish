@@ -55,6 +55,7 @@ abbr -a tree exa -T --icons
 abbr -a info info --vi-keys
 abbr -a lg lazygit
 abbr -a exa exa --icons
+abbr -a hx helix
 
 # cleanup orphaned packages
 abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
@@ -144,4 +145,7 @@ function imgs_to_webp
   end
 end
 
-
+function whatsrunningon
+  set port $argv[1]
+  lsof -i:$port
+ end
