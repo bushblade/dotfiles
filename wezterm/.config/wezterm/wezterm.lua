@@ -44,7 +44,8 @@ end)
 return {
 	color_scheme = "tokyonight",
 	font = wezterm.font("Victor Mono Nerd Font"),
-	window_background_opacity = 0.98,
+	hide_tab_bar_if_only_one_tab = true,
+	window_background_opacity = 0.95,
 	keys = {
 		{ key = "x", mods = "SHIFT|CTRL", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "v", mods = "SHIFT|CTRL", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
@@ -56,10 +57,11 @@ return {
 		{ key = "UpArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Up", 1 }) },
 		-- { key = "j", mods = "CTRL", action = act.ActivatePaneDirection("Down") },
 		{ key = "DownArrow", mods = "SHIFT|CTRL", action = act.AdjustPaneSize({ "Down", 1 }) },
-		{ key = "h", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-left") },
-		{ key = "j", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-down") },
-		{ key = "k", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-up") },
-		{ key = "l", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-right") },
+		-- Commented out as interfering with Tmux bindings
+		-- { key = "h", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-left") },
+		-- { key = "j", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-down") },
+		-- { key = "k", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-up") },
+		-- { key = "l", mods = "CTRL", action = act.EmitEvent("ActivatePaneDirection-right") },
 	},
 	mouse_bindings = {
 		-- Ctrl-click will open the link under the mouse cursor
