@@ -2,7 +2,7 @@ window:
   dimensions:
     columns: 226
     lines: 56
-  opacity: 0.98
+  opacity: 0.95
   padding:
     x: 0
     y: 0
@@ -26,25 +26,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x15161E'
-    red:     '0xf7768e'
-    green:   '0x9ece6a'
-    yellow:  '0xe0af68'
-    blue:    '0x7aa2f7'
+    black: '0x15161E'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
     magenta: '0xbb9af7'
-    cyan:    '0x7dcfff'
-    white:   '0xa9b1d6'
+    cyan: '0x7dcfff'
+    white: '0xa9b1d6'
 
   # Bright colors
   bright:
-    black:   '0x414868'
-    red:     '0xf7768e'
-    green:   '0x9ece6a'
-    yellow:  '0xe0af68'
-    blue:    '0x7aa2f7'
+    black: '0x414868'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
     magenta: '0xbb9af7'
-    cyan:    '0x7dcfff'
-    white:   '0xc0caf5'
+    cyan: '0x7dcfff'
+    white: '0xc0caf5'
 
   indexed_colors:
     - { index: 16, color: '0xff9e64' }
@@ -57,8 +57,8 @@ mouse:
       program: xdg-open
       args: []
 key_bindings:
+  - { action: ScrollPageUp , key: PageUp, mods: Shift}
+  - { action: ScrollPageDown , key: PageDown, mods: Shift}
+  - { action: ScrollToBottom , key: End, mods: Shift}
+  - { action: ScrollToTop , key: Home, mods: Shift}
 
-  - { key: PageUp,   mods: Shift,   action: ScrollPageUp   }
-  - { key: PageDown, mods: Shift,   action: ScrollPageDown }
-  - { key: End,      mods: Shift,   action: ScrollToBottom }
-  - { key: Home,     mods: Shift,   action: ScrollToTop    }
