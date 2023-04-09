@@ -71,6 +71,7 @@ return {
 			action = wezterm.action.OpenLinkAtMouseCursor,
 		},
 	},
+	bypass_mouse_reporting_modifiers = "CTRL|SHIFT",
 	hyperlink_rules = {
 		-- Linkify things that look like URLs and the host has a TLD name.
 		-- Compiled-in default. Used if you don't specify any hyperlink_rules.
