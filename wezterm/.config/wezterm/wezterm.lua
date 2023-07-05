@@ -43,7 +43,7 @@ end)
 
 return {
 	color_scheme = "tokyonight",
-	font = wezterm.font("Victor Mono Nerd Font"),
+	font = wezterm.font_with_fallback({ "Victor Mono Nerd Font", "Noto Color Emoji" }),
 	hide_tab_bar_if_only_one_tab = true,
 	window_background_opacity = 0.95,
 	keys = {
