@@ -5,6 +5,7 @@
 - [ neovim ](https://neovim.io/) Editor and IDE
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
 - [ Wezterm ](https://wezfurlong.org/wezterm/) Terminal emulator
+- [ Alacritty ](https://alacritty.org/) Terminal emulator
 - [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
   - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
     between Vim splits and kitty panes
@@ -50,6 +51,12 @@ git clone https://github.com/bushblade/dotfiles.git dotfiles
 ```bash
 cd dotfiles
 stow */
+```
+
+### Get the Catppuccin theme for Alacritty
+
+```bash
+git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 ```
 
 ### No sudo on global npm packages
