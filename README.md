@@ -14,6 +14,8 @@
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
+  - [ nvm ](https://github.com/jorgebucaran/nvm.fish) Node version manager
+- [lf file manager](https://github.com/gokcehan/lf) File manager
 - [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
   with icons
 - [ starship ](https://starship.rs/) Prompt
