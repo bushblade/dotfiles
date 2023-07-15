@@ -1,40 +1,5 @@
- # TokyoNight Color Palette
- set -l foreground c0caf5
- set -l selection 33467c
- set -l comment 565f89
- set -l red f7768e
- set -l orange ff9e64
- set -l yellow e0af68
- set -l green 9ece6a
- set -l purple 9d7cd8
- set -l cyan 7dcfff
- set -l pink bb9af7
-
- # Syntax Highlighting Colors
- set -g fish_color_normal $foreground
- set -g fish_color_command $cyan
- set -g fish_color_keyword $pink
- set -g fish_color_quote $yellow
- set -g fish_color_redirection $foreground
- set -g fish_color_end $orange
- set -g fish_color_error $red
- set -g fish_color_param $purple
- set -g fish_color_comment $comment
- set -g fish_color_selection --background=$selection
- set -g fish_color_search_match --background=$selection
- set -g fish_color_operator $green
- set -g fish_color_escape $pink
- set -g fish_color_autosuggestion $comment
-
- # Completion Pager Colors
- set -g fish_pager_color_progress $comment
- set -g fish_pager_color_prefix $cyan
- set -g fish_pager_color_completion $foreground
- set -g fish_pager_color_description $comment
- set -g fish_pager_color_selected_background --background=$selection
-
 # set this to enable undercurls in Nvim in Wezterm
-set -gx TERM wezterm
+# set -gx TERM wezterm
 set -gx EDITOR nvim
 set fish_greeting
 fish_vi_key_bindings
@@ -78,19 +43,16 @@ set LUAROCKS "$HOME/.luarocks/bin"
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
-set -x GOPATH "$HOME/.go/bin"
-set -x PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS
+set -gx GOPATH "$HOME/.go/bin"
+set -gx PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS
 
 
 if test -e "$HOME/.config/fish/secret.fish"
   source "$HOME/.config/fish/secret.fish"
 end
 
-# User most for pager with colours
-# set -x PAGER most
-
 # man pages for npm packages
-set -x MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
+set -gx MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
 
 starship init fish | source
 
