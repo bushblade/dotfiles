@@ -111,3 +111,10 @@ function whatsrunningon
   set port $argv[1]
   lsof -i:$port
  end
+
+function lfcd
+    set selected_dir (lf -last-dir-path)
+    lf
+    cd $selected_dir; or echo "Error: Directory $selected_dir does not exist."
+end
+
