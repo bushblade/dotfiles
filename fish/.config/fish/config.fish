@@ -42,9 +42,11 @@ abbr -a tkss tmux kill-session -t
 set LUAROCKS "$HOME/.luarocks/bin"
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
+set BUN_PACKAGES "$HOME/.bun/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
 set -gx GOPATH "$HOME/.go/bin"
-set -gx PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS
+set -gx PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH
+$LUAROCKS $BUN_PACKAGES
 
 
 if test -e "$HOME/.config/fish/secret.fish"
