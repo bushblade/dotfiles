@@ -19,7 +19,7 @@
 - [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
   with icons
 - [ starship ](https://starship.rs/) Prompt
-- [ exa ](https://the.exa.website/introduction)
+- [ eza ](https://github.com/eza-community/eza)
 - [ bat ](https://github.com/sharkdp/bat)
 - [ fd ](https://github.com/sharkdp/fd)
 - [ tldr ](https://tldr.sh/)
