@@ -50,7 +50,7 @@ fish_config theme save "Catppuccin Mocha"
 ### Clone the repo
 
 ```bash
-git clone https://github.com/bushblade/dotfiles.git dotfiles
+git clone git@github.com:bushblade/dotfiles.git
 ```
 
 ### Use GNU stow to create symlinks to config files
