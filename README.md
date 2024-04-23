@@ -9,12 +9,14 @@
 - [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
   - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
     between Vim splits and kitty panes
+- [fzf](https://github.com/junegunn/fzf)
 - tmux
   - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
   - [ nvm ](https://github.com/jorgebucaran/nvm.fish) Node version manager
+  - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
 - [lf file manager](https://github.com/gokcehan/lf) File manager
 - [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
   with icons
