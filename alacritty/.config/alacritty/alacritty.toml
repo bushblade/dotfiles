@@ -12,6 +12,10 @@ style = "Italic"
 family = "VictorMono Nerd Font"
 style = "Medium"
 
+[font.glyph_offset]
+y = 0
+x = -1
+
 [[keyboard.bindings]]
 action = "ScrollPageUp"
 key = "PageUp"
