@@ -19,17 +19,17 @@ abbr -a rm trash
 abbr -a mv mv -i
 abbr -a cl clear
 abbr -a ignorenode attr -s com.dropbox.ignored -V 1 node_modules
-abbr -a ls exa -l --icons
-abbr -a la exa -la --icons
+abbr -a ls eza -l --icons
+abbr -a la eza -la --icons
 abbr -a icat kitty +kitten icat
-abbr -a tree exa -T --icons
+abbr -a tree eza -T --icons
 abbr -a info info --vi-keys
 abbr -a lg lazygit
-abbr -a exa exa --icons
+abbr -a eza exa --icons
 abbr -a hx helix
 
 # cleanup orphaned packages
-abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
+# abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
 
 # tmux aliases
 abbr -a ta tmux attach -t
@@ -44,14 +44,17 @@ abbr -a tkss tmux kill-session -t
 # instructions at
 # https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md
 
+# Add Neovim bin to path
+set NEOVIM "$HOME/neovim/build/bin"
+
 # Add npm, lua, deno and cargo packages to PATH
 set LUAROCKS "$HOME/.luarocks/bin"
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
 set BUN_PACKAGES "$HOME/.bun/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
-set -gx GOPATH "$HOME/.go/bin"
-set -gx PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS $BUN_PACKAGES
+set -gx GOPATH "/usr/local/go/bin"
+set -gx PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS $BUN_PACKAGES $NEOVIM
 
 
 if test -e "$HOME/.config/fish/secret.fish"
