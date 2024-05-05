@@ -24,7 +24,7 @@ gui:
       - '#cdd6f4'
     searchingActiveBorderColor:
       - '#f9e2af'
-# git:
-#   paging:
-#     colorArg: always
-#     pager: delta --dark --paging=never
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
