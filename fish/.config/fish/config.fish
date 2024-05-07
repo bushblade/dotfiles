@@ -12,7 +12,7 @@ fzf_configure_bindings --variables=\e\cv --history=\e\ch
 
 abbr -a nv nvim
 abbr -a x exit
-abbr -a cat bat
+abbr -a cat batcat
 abbr -a find fd
 abbr -a .. cd ..
 abbr -a rm trash
@@ -127,3 +127,6 @@ function lfcd
     lf
     cd $selected_dir; or echo "Error: Directory $selected_dir does not exist."
 end
+
+# Tell nvm to use latest version
+nvm use 22.1.0 > /dev/null ^ /dev/null
