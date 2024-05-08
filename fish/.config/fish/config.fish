@@ -124,3 +124,6 @@ function lfcd
     lf
     cd $selected_dir; or echo "Error: Directory $selected_dir does not exist."
 end
+
+ # Tell nvm to use latest version
+ nvm use 22.1.0 > /dev/null ^ /dev/null
