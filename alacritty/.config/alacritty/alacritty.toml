@@ -50,8 +50,10 @@ hide_when_typing = true
 # threshold = 300
 
 [window]
-opacity = 0.95
-startup_mode = 'Maximized'
+opacity = 1
+blur = true
+decorations = 'None'
+# startup_mode = 'Maximized'
 
 [window.padding]
 x = 0
