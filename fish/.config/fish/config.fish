@@ -50,8 +50,8 @@ set NPM_PACKAGES "$HOME/.npm-packages/bin"
 set DENO_PACKAGES "$HOME/.deno/bin"
 set BUN_PACKAGES "$HOME/.bun/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
-set -gx GOPATH "$HOME/.go/bin"
-set -gx PATH $PATH $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS $BUN_PACKAGES
+set GOPATH "$HOME/.go/bin"
+fish_add_path $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS $BUN_PACKAGES
 
 
 if test -e "$HOME/.config/fish/secret.fish"
