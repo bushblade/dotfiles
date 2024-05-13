@@ -13,7 +13,8 @@ fzf_configure_bindings --variables=\e\cv --history=\e\ch
 abbr -a nv nvim
 abbr -a x exit
 abbr -a cat batcat
-abbr -a find fd
+abbr -a find fdfind
+abbr -a fd fdfind
 abbr -a .. cd ..
 abbr -a rm trash
 abbr -a mv mv -i
