@@ -14,7 +14,7 @@ style = "Medium"
 
 [font.glyph_offset]
 y = 0
-x = -1
+x = 0
 
 [[keyboard.bindings]]
 action = "ScrollPageUp"
