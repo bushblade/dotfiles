@@ -4,6 +4,8 @@
 
 - [ neovim ](https://neovim.io/) Editor and IDE
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
+  - [bob](https://github.com/MordechaiHadad/bob) Neovim installer and version
+    manager
 - [ Wezterm ](https://wezfurlong.org/wezterm/) Terminal emulator
 - [ Alacritty ](https://alacritty.org/) Terminal emulator
 - [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
