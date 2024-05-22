@@ -19,7 +19,6 @@
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
   - [ nvm ](https://github.com/jorgebucaran/nvm.fish) Node version manager
   - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
-- [lf file manager](https://github.com/gokcehan/lf) File manager
 - [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
   with icons
 - [ starship ](https://starship.rs/) Prompt
@@ -70,14 +69,15 @@ stow */
 git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 ```
 
-### No sudo on global npm packages
-
-[ Detailed instructions ](https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md)
+### Install Node and npm with nvm
 
 ```bash
-mkdir ~/.npm-packages
-npm config set prefix '~/.npm-packages'
+nvm install latest
+nvm use latest
 ```
+
+> **Note:** With using nvm to install NodeJS then globally installed npm packages don't
+> need or use sudo to install as they are installed in users home directory.
 
 ### Setup file and image previews in nnn
 
