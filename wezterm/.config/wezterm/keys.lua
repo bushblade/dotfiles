@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local mux = wezterm.mux
 local act = wezterm.action
 
 local key_config = {
@@ -17,11 +18,27 @@ local key_config = {
 	-- Leader keys
 	{ key = "q", mods = "LEADER", action = act.CloseCurrentTab({ confirm = true }) },
 	{ key = "f", mods = "LEADER", action = act.Search("CurrentSelectionOrEmptyString") },
-	{ key = "c", mods = "LEADER", action = act.ActivateCopyMode },
-	-- Tmux style split bindings
+	{ key = "[", mods = "LEADER", action = act.ActivateCopyMode },
+	-- Rename workspace
+	{
+		key = "W",
+		mods = "LEADER",
+		action = act.PromptInputLine({
+			description = "Enter new workspace name:",
+			action = wezterm.action_callback(function(window, pane, line)
+				local current_workspace = mux.get_active_workspace()
+				if line then
+					mux.rename_workspace(current_workspace, line)
+				end
+			end),
+		}),
+	},
+	-- Tmux style bindings
 	{ key = "s", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 	{ key = "v", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
+	{ key = "w", mods = "LEADER", action = act.ShowLauncherArgs({ flags = "WORKSPACES|TABS" }) },
+	{ key = "c", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
 }
 
 for i = 1, 8 do
