@@ -14,6 +14,16 @@ end)
 c.color_scheme = "Catppuccin Mocha"
 c.font = wezterm.font_with_fallback({ "Victor Mono Nerd Font", "Noto Color Emoji" })
 c.hide_tab_bar_if_only_one_tab = false
+-- c.window_background_image = "/home/will/dotfiles/wezterm/.config/wezterm/background.png"
+-- c.window_background_image_hsb = {
+-- 	-- Darken the background image by reducing it to 1/3rd
+-- 	brightness = 0.2,
+-- 	-- You can adjust the hue by scaling its value.
+-- 	-- a multiplier of 1.0 leaves the value unchanged.
+-- 	hue = 1,
+-- 	-- You can adjust the saturation also.
+-- 	saturation = 0.9,
+-- }
 c.window_background_opacity = 0.85
 c.window_decorations = "RESIZE"
 c.leader = { key = " ", mods = "CTRL" }
