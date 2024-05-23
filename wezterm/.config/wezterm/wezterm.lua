@@ -43,9 +43,8 @@ wezterm.on("ActivatePaneDirection-down", function(window, pane)
 end)
 
 c.color_scheme = "Catppuccin Mocha"
-c.use_fancy_tab_bar = true
 c.font = wezterm.font_with_fallback({ "Victor Mono Nerd Font", "Noto Color Emoji" })
-c.hide_tab_bar_if_only_one_tab = true
+c.hide_tab_bar_if_only_one_tab = false
 c.window_background_opacity = 0.85
 c.window_decorations = "RESIZE"
 c.leader = { key = " ", mods = "CTRL" }
