@@ -39,6 +39,8 @@ local key_config = {
 	{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
 	{ key = "w", mods = "LEADER", action = act.ShowLauncherArgs({ flags = "WORKSPACES|TABS" }) },
 	{ key = "c", mods = "LEADER", action = act.SpawnTab("CurrentPaneDomain") },
+	{ key = "p", mods = "LEADER", action = act.ActivateTabRelative(1) },
+	{ key = "n", mods = "LEADER", action = act.ActivateTabRelative(-1) },
 }
 
 for i = 1, 8 do
