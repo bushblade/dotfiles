@@ -70,6 +70,8 @@ set -gx NNN_TRASH 1
 # nnn splugins
 set -x NNN_FIFO /tmp/nnn.fifo
 set -x NNN_PLUG 'p:preview-tui;g:getplugs;o:organize;'
+# Set nnn terminal
+set -x NNN_TERMINAL 'alacritty'
 
 # NNN cd on exit
 # Rename this file to match the name of the function
@@ -120,10 +122,14 @@ function whatsrunningon
   lsof -i:$port
  end
 
-function lfcd
-    set selected_dir (lf -last-dir-path)
-    lf
-    cd $selected_dir; or echo "Error: Directory $selected_dir does not exist."
+# Yazi change working directory on exit
+function yy
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	yazi $argv --cwd-file="$tmp"
+	if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
 end
 
  # Tell nvm to use latest version

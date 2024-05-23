@@ -21,6 +21,7 @@
   - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
 - [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
   with icons
+- [ Yazi ](https://yazi-rs.github.io/) Another terminal file manager!
 - [ starship ](https://starship.rs/) Prompt
 - [ eza ](https://github.com/eza-community/eza)
 - [ bat ](https://github.com/sharkdp/bat)
