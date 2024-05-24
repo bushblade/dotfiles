@@ -50,6 +50,10 @@ c.window_frame = {
 	font = wezterm.font({ family = "Victor Mono Nerd Font", weight = "Bold" }),
 	font_size = 11.0,
 }
+c.inactive_pane_hsb = {
+	saturation = 0.7,
+	brightness = 0.7,
+}
 
 -- Tab bar styling plugin
 wezterm.plugin.require("https://github.com/nekowinston/wezterm-bar").apply_to_config(c, {
