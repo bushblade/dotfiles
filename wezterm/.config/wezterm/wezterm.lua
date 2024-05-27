@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local mux = wezterm.mux
-local c = wezterm.config_builder()
 local keys = require("keys")
+
 -- load settings for navigating to/from nvim
 require("nvim")
 
@@ -11,6 +11,8 @@ wezterm.on("gui-startup", function()
 	window:gui_window():maximize()
 end)
 
+-- Main config here
+local c = wezterm.config_builder()
 c.color_scheme = "Catppuccin Mocha"
 c.font = wezterm.font_with_fallback({ "Victor Mono Nerd Font", "Noto Color Emoji" })
 c.hide_tab_bar_if_only_one_tab = false
