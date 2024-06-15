@@ -1,5 +1,5 @@
 # set this to enable undercurls in Nvim in Wezterm
-# set -gx TERM wezterm
+set -gx TERM wezterm
 set -gx EDITOR nvim
 set fish_greeting
 fish_vi_key_bindings
@@ -133,6 +133,12 @@ function yy
 		cd -- "$cwd"
 	end
 	rm -f -- "$tmp"
+end
+
+function delete_rsrc_files
+    # Recursively find and delete .rsrc files in the current directory using fd
+    fd -H -t f -e rsrc -X rm
+    echo "Deleted all .rsrc files from the current directory and its subdirectories."
 end
 
  # Tell nvm to use latest version
