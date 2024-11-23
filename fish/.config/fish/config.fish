@@ -142,4 +142,4 @@ function delete_rsrc_files
 end
 
  # Tell nvm to use latest version
- nvm use 22.1.0 > /dev/null ^ /dev/null
+ nvm use latest > /dev/null ^ /dev/null
