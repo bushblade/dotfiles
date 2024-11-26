@@ -58,3 +58,9 @@ blur = true
 [window.padding]
 x = 1
 y = 2
+
+# Auto start a default tmux session if it doesn't exist
+
+[shell]
+program = "/usr/bin/tmux"
+args = ["new-session", "-A", "-s", "default"]
