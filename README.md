@@ -12,8 +12,9 @@
   - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
     between Vim splits and kitty panes
 - [fzf](https://github.com/junegunn/fzf)
-- tmux
+- [ Tmux ](https://github.com/tmux/tmux/wiki)
   - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
+  - [ Catppuccin theme for Tmux ](https://github.com/catppuccin/tmux)
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
@@ -28,8 +29,6 @@
 - [ fd ](https://github.com/sharkdp/fd)
 - [ tldr ](https://tldr.sh/)
 - [ ripgrep ](https://github.com/BurntSushi/ripgrep)
-- [ cht.sh ](http://cht.sh/)
-- [ node & npm ](https://nodejs.org/en/)
 - [ stow ](https://www.gnu.org/software/stow/)
 - [lazygit](https://github.com/jesseduffield/lazygit)
   - [git-delta](https://github.com/dandavison/delta)
