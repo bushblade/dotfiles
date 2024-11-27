@@ -30,9 +30,6 @@ abbr -a hx helix
 abbr -a pd prevd
 abbr -a nd nextd
 
-# cleanup orphaned packages
-abbr -a cleanup sudo pacman -Rns (pacman -Qtdq)
-
 # tmux aliases
 abbr -a ta tmux attach -t
 abbr -a tad tmux attach -d -t
