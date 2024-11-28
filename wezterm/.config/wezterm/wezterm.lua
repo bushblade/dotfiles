@@ -37,6 +37,40 @@ c.window_frame = {
 	font_size = 11.0,
 }
 
+-- Tab bar styling plugin
+wezterm.plugin.require("https://github.com/nekowinston/wezterm-bar").apply_to_config(c, {
+	position = "top",
+	max_width = 32,
+	dividers = "rounded", -- or "slant_left", "arrows", "slant_right", false
+	indicator = {
+		leader = {
+			enabled = true,
+			off = " ",
+			on = " ",
+		},
+		mode = {
+			enabled = true,
+			names = {
+				resize_mode = "RESIZE",
+				copy_mode = "VISUAL",
+				search_mode = "SEARCH",
+			},
+		},
+	},
+	tabs = {
+		numerals = "arabic", -- or "roman"
+		pane_count = "superscript", -- or "subscript", false
+		brackets = {
+			active = { "", ":" },
+			inactive = { "", ":" },
+		},
+	},
+	clock = { -- note that this overrides the whole set_right_status
+		enabled = true,
+		format = "%H:%M", -- use https://wezfurlong.org/wezterm/config/lua/wezterm.time/Time/format.html
+	},
+})
+
 -- Launch Tmux at start
 c.default_prog = { "/usr/bin/tmux", "new-session", "-A", "-s", "default" }
 
