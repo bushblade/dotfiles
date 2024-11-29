@@ -1,0 +1,20 @@
+[/]
+enable-autotiling=true
+enable-blur-selected-tilepreview=true
+enable-blur-snap-assistant=true
+enable-window-border=true
+focus-window-down=['<Alt>j']
+focus-window-left=['<Alt>h']
+focus-window-right=['<Alt>l']
+focus-window-up=['<Alt>k']
+move-window-center=['<Super>c']
+selected-layouts=[['Layout 1', 'Layout 1'], ['Layout 4', 'Layout 3'], ['Layout 1', 'Layout 1']]
+span-window-all-tiles=['<Control><Super>f']
+span-window-down=['<Control><Super>Down']
+span-window-left=['<Control><Super>Left']
+span-window-right=['<Control><Super>Right']
+span-window-up=['<Control><Super>Up']
+top-edge-maximize=true
+untile-window=['<Control><Super>c']
+window-border-color='rgb(148,226,213)'
+window-border-width=uint32 2
