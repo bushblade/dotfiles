@@ -138,5 +138,10 @@ function delete_rsrc_files
     echo "Deleted all .rsrc files from the current directory and its subdirectories."
 end
 
+# use Neovim as sudo with my config
+function sudonvim
+    sudo XDG_CONFIG_HOME=/home/will/.config XDG_DATA_HOME=/home/will/.local/share XDG_CACHE_HOME=/home/will/.cache /home/will/.local/share/bob/nvim-bin/nvim $argv
+end
+
  # Tell nvm to use latest version
  nvm use latest > /dev/null ^ /dev/null
