@@ -3,6 +3,7 @@
 [user]
 	email = bushblade@gmail.com
 	name = Will Adams
+	signingkey = 8EB2B7960EBD449F
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -31,3 +32,5 @@
 [diff]
     colorMoved = default
 
+[commit]
+	gpgsign = true
