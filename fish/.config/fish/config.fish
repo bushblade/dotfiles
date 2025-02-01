@@ -10,7 +10,7 @@ set fzf_preview_dir_cmd eza --all --color=always
 # Ctrl + Alt + v for fzf files and Ctrl + Alt + h for fzf history
 fzf_configure_bindings --variables=\e\cv --history=\e\ch
 
-abbr -a nv nvim
+abbr -a nv TERM= nvim
 abbr -a x exit
 abbr -a cat bat
 abbr -a find fd
