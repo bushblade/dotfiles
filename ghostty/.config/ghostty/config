@@ -5,5 +5,9 @@ theme = catppuccin-mocha
 
 background-opacity = 0.8
 background-blur = true
-maximize = true
+# maximize = true
 window-decoration = none
+cursor-invert-fg-bg
+cursor-opacity = 0.8
+mouse-hide-while-typing
+initial-command = "tmux new-session -A -s default"
