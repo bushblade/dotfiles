@@ -10,7 +10,7 @@ local mux = wezterm.mux
 -- Main config here
 local c = wezterm.config_builder()
 c.color_scheme = "Catppuccin Mocha"
-c.font = wezterm.font_with_fallback({ "Victor Mono Nerd Font", "Noto Color Emoji" })
+c.font = wezterm.font("Victor Mono Nerd Font")
 c.hide_tab_bar_if_only_one_tab = true
 c.window_background_opacity = 0.85
 c.window_decorations = "RESIZE"
