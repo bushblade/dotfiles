@@ -6,10 +6,11 @@
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
   - [bob](https://github.com/MordechaiHadad/bob) Neovim installer and version
     manager
+- [Ghostty](https://ghostty.org/) Terminal emulator
 - [ Wezterm ](https://wezfurlong.org/wezterm/) Terminal emulator
 - [ Alacritty ](https://alacritty.org/) Terminal emulator
-- [ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator
-  - [ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move
+- ~~[ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator~~
+  - ~~[ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move~~
     between Vim splits and kitty panes
 - [fzf](https://github.com/junegunn/fzf)
 - [ Tmux ](https://github.com/tmux/tmux/wiki)
@@ -32,8 +33,6 @@
 - [ stow ](https://www.gnu.org/software/stow/)
 - [lazygit](https://github.com/jesseduffield/lazygit)
   - [git-delta](https://github.com/dandavison/delta)
-- [cwebp](https://developers.google.com/speed/webp/docs/cwebp) Convert images to
-  webp format
 
 **... and a nice patched nerd font!** - [Victor Mono](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/VictorMono/Light/complete/Victor%20Mono%20Light%20Nerd%20Font%20Complete.ttf)
 
