@@ -8,6 +8,7 @@ background-blur = true
 maximize = true
 window-decoration = none
 cursor-invert-fg-bg
-cursor-opacity = 0.8
+# cursor-opacity = 0.8
+cursor-style-blink = true
 mouse-hide-while-typing
 initial-command = "tmux new-session -A -s default"

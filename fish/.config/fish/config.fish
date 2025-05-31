@@ -1,5 +1,5 @@
 # set this to enable undercurls in Nvim in Wezterm
-set -gx TERM wezterm
+# set -gx TERM wezterm
 set -gx EDITOR nvim
 set fish_greeting
 fish_vi_key_bindings
@@ -10,7 +10,8 @@ set fzf_preview_dir_cmd eza --all --color=always
 # Ctrl + Alt + v for fzf files and Ctrl + Alt + h for fzf history
 fzf_configure_bindings --variables=\e\cv --history=\e\ch
 
-abbr -a nv TERM= nvim
+# abbr -a nv TERM= nvim
+abbr -a nv nvim
 abbr -a x exit
 abbr -a cat bat
 abbr -a find fd
