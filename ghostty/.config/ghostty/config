@@ -3,7 +3,7 @@ font-family = VictorMono Nerd Font
 # Catppuchin-mocha theme
 theme = catppuccin-mocha
 
-background-opacity = 0.85
+background-opacity = 0.8
 background-blur = true
 maximize = true
 window-decoration = none
