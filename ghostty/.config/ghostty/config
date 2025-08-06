@@ -1,7 +1,6 @@
 font-family = VictorMono Nerd Font
 
-# Catppuchin-mocha theme
-theme = catppuccin-mocha
+theme = tokyonight_night
 
 background-opacity = 0.8
 background-blur = true
