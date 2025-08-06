@@ -1,31 +1,31 @@
 gui:
-  sidePanelWidth: 0.2 # number from 0 to 1
-  parseEmoji: true
-  showIcons: true
+  nerdFontsVersion: "3"
   theme:
     activeBorderColor:
-      - '#94e2d5'
-      - bold
+      - "#ff9e64"
+      - "bold"
     inactiveBorderColor:
-      - '#a6adc8'
-    optionsTextColor:
-      - '#89b4fa'
-    selectedLineBgColor:
-      - '#313244'
-    selectedRangeBgColor:
-      - '#313244'
-    cherryPickedCommitBgColor:
-      - '#45475a'
-    cherryPickedCommitFgColor:
-      - '#94e2d5'
-    unstagedChangesColor:
-      - '#f38ba8'
-    defaultFgColor:
-      - '#cdd6f4'
+      - "#27a1b9"
     searchingActiveBorderColor:
-      - '#f9e2af'
+      - "#ff9e64"
+      - "bold"
+    optionsTextColor:
+      - "#7aa2f7"
+    selectedLineBgColor:
+      - "#283457"
+    cherryPickedCommitFgColor:
+      - "#7aa2f7"
+    cherryPickedCommitBgColor:
+      - "#bb9af7"
+    markedBaseCommitFgColor:
+      - "#7aa2f7"
+    markedBaseCommitBgColor:
+      - "#e0af68"
+    unstagedChangesColor:
+      - "#db4b4b"
+    defaultFgColor:
+      - "#c0caf5"
 git:
   paging:
     colorArg: always
     pager: delta --dark --paging=never
-    overrideGpg: true
