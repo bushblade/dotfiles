@@ -15,7 +15,6 @@
 - [fzf](https://github.com/junegunn/fzf)
 - [ Tmux ](https://github.com/tmux/tmux/wiki)
   - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
-  - [ Catppuccin theme for Tmux ](https://github.com/catppuccin/tmux)
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
@@ -24,6 +23,7 @@
 - [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
   with icons
 - [ Yazi ](https://yazi-rs.github.io/) Another terminal file manager!
+  - [ Tokyonight theme for Yazi](https://github.com/BennyOe/tokyo-night.yazi)
 - [ starship ](https://starship.rs/) Prompt
 - [ eza ](https://github.com/eza-community/eza)
 - [ bat ](https://github.com/sharkdp/bat)
@@ -42,13 +42,6 @@
 chsh -s /bin/fish
 ```
 
-### Set Catppuccin theme for fish
-
-```
-fisher install catppuccin/fish
-fish_config theme save "Catppuccin Mocha"
-```
-
 ### Clone the repo
 
 ```bash
@@ -60,12 +53,6 @@ git clone git@github.com:bushblade/dotfiles.git
 ```bash
 cd dotfiles
 stow */
-```
-
-### Get the Catppuccin theme for Alacritty
-
-```bash
-git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 ```
 
 ### Install Node and npm with nvm
