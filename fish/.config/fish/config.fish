@@ -4,6 +4,9 @@ set -gx EDITOR nvim
 set fish_greeting
 fish_vi_key_bindings
 
+# Set theme for bat
+set -Ux BAT_THEME "TwoDark"
+
 # TokyoNight Color Palette
 set -l foreground c0caf5
 set -l selection 283457
