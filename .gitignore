@@ -4,4 +4,4 @@ test.js
 secret.fish
 catppuccin/
 alacritty/.config/alacritty/catppuccin
-fish/.config/fish
+# fish/.config/fish
