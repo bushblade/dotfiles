@@ -184,5 +184,25 @@ function sudonvim
     sudo XDG_CONFIG_HOME=/home/will/.config XDG_DATA_HOME=/home/will/.local/share XDG_CACHE_HOME=/home/will/.cache /home/will/.local/share/bob/nvim-bin/nvim $argv
 end
 
+# Function to find and trash all node_modules directories recursively.
+# Usage: trash_node_modules
+function trash_node_modules
+    # Check for dependencies
+    if not command -v fd > /dev/null
+        echo "Error: 'fd' is not installed. Please install it to continue."
+        return 1
+    end
+
+    if not command -v trash > /dev/null
+        echo "Error: 'trash-cli' is not installed. Please install it to continue."
+        return 1
+    end
+
+    # Find only the top-level 'node_modules' directories and move them to trash.
+    echo "Searching for node_modules directories to trash..."
+    fd --type d --hidden --no-ignore --prune 'node_modules' . | xargs -I {} trash {}
+    echo "Cleanup complete."
+end
+
  # Tell nvm to use latest version
  nvm use latest > /dev/null ^ /dev/null
