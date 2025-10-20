@@ -19,7 +19,6 @@
   },
   "javascript": {
     "formatter": {
-      "trailingComma": "all",
       "semicolons": "asNeeded",
       "arrowParentheses": "always",
       "bracketSpacing": true,
