@@ -79,6 +79,9 @@ abbr -a tl tmux list-sessions
 abbr -a tksv tmux kill-server
 abbr -a tkss tmux kill-session -t
 
+# Set up fzf key bindings
+fzf --fish | source
+
 
 # no sudo on npm global packages
 # instructions at
