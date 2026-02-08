@@ -7,11 +7,6 @@
   - [bob](https://github.com/MordechaiHadad/bob) Neovim installer and version
     manager
 - [Ghostty](https://ghostty.org/) Terminal emulator
-- [ Wezterm ](https://wezfurlong.org/wezterm/) Terminal emulator
-- [ Alacritty ](https://alacritty.org/) Terminal emulator
-- ~~[ kitty ](https://sw.kovidgoyal.net/kitty/) Terminal emulator~~
-  - ~~[ kitty vim navigator ](https://github.com/knubie/vim-kitty-navigator) Move~~
-    between Vim splits and kitty panes
 - [fzf](https://github.com/junegunn/fzf)
 - [ Tmux ](https://github.com/tmux/tmux/wiki)
   - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
@@ -20,8 +15,6 @@
   - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
   - [ nvm ](https://github.com/jorgebucaran/nvm.fish) Node version manager
   - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
-- [ nnn-nerd ](https://github.com/jarun/nnn) Patched version of nnn file manager
-  with icons
 - [ Yazi ](https://yazi-rs.github.io/) Another terminal file manager!
   - [ Tokyonight theme for Yazi](https://github.com/BennyOe/tokyo-night.yazi)
 - [ starship ](https://starship.rs/) Prompt
@@ -65,23 +58,3 @@ nvm use latest
 > **Note:** With using nvm to install NodeJS then globally installed npm packages don't
 > need or use sudo to install as they are installed in users home directory.
 
-### Setup file and image previews in nnn
-
-[Detailed instructions](https://github.com/jarun/nnn/tree/master/plugins)
-
-install plugins for nnn
-
-```bash
-curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
-```
-
-Add the following to `~/.profile`
-
-```bash
-# previews in nnn
-export NNN_FIFO=/tmp/nnn.fifo
-export NNN_PLUG='p:preview-tui;g:getplugs;o:organize;'
-```
-
-Activate the plugin in nnn after launching nnn by hitting `;p`
-Update plugins with `;g`
