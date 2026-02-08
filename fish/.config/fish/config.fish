@@ -1,6 +1,7 @@
 # set this to enable undercurls in Nvim in Wezterm
 # set -gx TERM wezterm
 set -gx EDITOR nvim
+set -gx TERMINAL ghostty
 set fish_greeting
 fish_vi_key_bindings
 
@@ -107,52 +108,6 @@ end
 set -gx MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
 
 starship init fish | source
-
-# NNN trash instead of rm
-set -gx NNN_TRASH 1
-
-# nnn splugins
-set -x NNN_FIFO /tmp/nnn.fifo
-set -x NNN_PLUG 'p:preview-tui;g:getplugs;o:organize;'
-# Set nnn terminal
-set -x NNN_TERMINAL 'alacritty'
-
-# NNN cd on exit
-# Rename this file to match the name of the function
-# e.g. ~/.config/fish/functions/n.fish
-# or, add the lines to the 'config.fish' file.
-function n --wraps nnn --description 'support nnn quit and change directory'
-    # Block nesting of nnn in subshells
-    if test -n "$NNNLVL"
-        if [ (expr $NNNLVL + 0) -ge 1 ]
-            echo "nnn is already running"
-            return
-        end
-    end
-
-    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
-    # To cd on quit only on ^G, remove the "-x" as in:
-    #    set NNN_TMPFILE "$XDG_CONFIG_HOME/nnn/.lastd"
-    # NOTE: NNN_TMPFILE is fixed, should not be modified
-    if test -n "$XDG_CONFIG_HOME"
-        set -x NNN_TMPFILE "$XDG_CONFIG_HOME/nnn/.lastd"
-    else
-        set -x NNN_TMPFILE "$HOME/.config/nnn/.lastd"
-    end
-
-    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
-    # stty start undef
-    # stty stop undef
-    # stty lwrap undef
-    # stty lnext undef
-
-    nnn $argv
-
-    if test -e $NNN_TMPFILE
-        source $NNN_TMPFILE
-        rm $NNN_TMPFILE
-    end
-end
 
 # function to convert all jpg images in directory to webp
 function imgs_to_webp
