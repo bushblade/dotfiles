@@ -74,6 +74,7 @@ abbr -a nd nextd
 
 # tmux aliases
 abbr -a ta tmux attach -t
+abbr -a td tmux detach
 abbr -a tad tmux attach -d -t
 abbr -a ts tmux new-session -s
 abbr -a tl tmux list-sessions
