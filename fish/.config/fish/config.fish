@@ -83,11 +83,6 @@ abbr -a tkss tmux kill-session -t
 # Set up fzf key bindings
 fzf --fish | source
 
-
-# no sudo on npm global packages
-# instructions at
-# https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md
-
 # Add npm, lua, deno and cargo packages to PATH
 set LUAROCKS "$HOME/.luarocks/bin"
 set NPM_PACKAGES "$HOME/.npm-packages/bin"
