@@ -8,11 +8,11 @@
     manager
 - [Ghostty](https://ghostty.org/) Terminal emulator
 - [fzf](https://github.com/junegunn/fzf)
+- [Zoxide](https://github.com/ajeetdsouza/zoxide) Easily jump to directories 
 - [ Tmux ](https://github.com/tmux/tmux/wiki)
   - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
-  - [ z ](https://github.com/jethrokuan/z) Easily jump to directories
   - [ nvm ](https://github.com/jorgebucaran/nvm.fish) Node version manager
   - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
 - [ Yazi ](https://yazi-rs.github.io/) Another terminal file manager!
