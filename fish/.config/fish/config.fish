@@ -95,9 +95,6 @@ if test -e "$HOME/.config/fish/secret.fish"
   source "$HOME/.config/fish/secret.fish"
 end
 
-# man pages for npm packages
-set -gx MANPATH $NPM_PACKAGES/share/man /usr/share/man $MANPATH  
-
 starship init fish | source
 
 # function to convert all jpg images in directory to webp
