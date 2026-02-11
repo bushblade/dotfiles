@@ -84,14 +84,11 @@ fzf --fish | source
 
 # Add npm, lua, deno and cargo packages to PATH
 set LUAROCKS "$HOME/.luarocks/bin"
-set NPM_PACKAGES "$HOME/.npm-packages/bin"
-set DENO_PACKAGES "$HOME/.deno/bin"
-set BUN_PACKAGES "$HOME/.bun/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
 set GOPATH "$HOME/go/bin"
 set BOBPATH "$HOME/.local/share/bob/nvim-bin"
 set EXERCISM "$HOME/.exercism/bin"
-fish_add_path $NPM_PACKAGES $DENO_PACKAGES $CARGO_PACKAGES $GOPATH $LUAROCKS $BUN_PACKAGES $BOBPATH $EXERCISM
+fish_add_path $CARGO_PACKAGES $GOPATH $LUAROCKS $BOBPATH $EXERCISM
 
 
 if test -e "$HOME/.config/fish/secret.fish"
