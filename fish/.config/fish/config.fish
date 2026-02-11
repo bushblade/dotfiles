@@ -152,3 +152,12 @@ end
 
  # Tell nvm to use latest version
  nvm use latest > /dev/null ^ /dev/null
+
+# initialize zoxide for fish
+ zoxide init fish | source
+
+# shortcut for zoxide with fzf
+function zi
+    set -l result (zoxide query -l | fzf --height 40% --reverse)
+    and cd "$result"
+end
