@@ -63,7 +63,6 @@ abbr -a cl clear
 abbr -a ignorenode attr -s com.dropbox.ignored -V 1 node_modules
 abbr -a ls exa -l --icons
 abbr -a la exa -la --icons
-abbr -a icat kitty +kitten icat
 abbr -a tree exa -T --icons
 abbr -a info info --vi-keys
 abbr -a lg lazygit
