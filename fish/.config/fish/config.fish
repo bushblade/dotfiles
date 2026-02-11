@@ -67,7 +67,6 @@ abbr -a tree exa -T --icons
 abbr -a info info --vi-keys
 abbr -a lg lazygit
 abbr -a exa exa --icons
-abbr -a hx helix
 abbr -a pd prevd
 abbr -a nd nextd
 
