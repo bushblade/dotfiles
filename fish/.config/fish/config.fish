@@ -5,6 +5,9 @@ set -gx TERMINAL ghostty
 set fish_greeting
 fish_vi_key_bindings
 
+# set terminal for gpg key 
+set -gx GPG_TTY (tty)
+
 # Set theme for bat
 set -Ux BAT_THEME "TwoDark"
 
@@ -86,7 +89,7 @@ fzf --fish | source
 set LUAROCKS "$HOME/.luarocks/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
 set GOPATH "$HOME/go/bin"
-set BOBPATH "$HOME/.local/share/bob/nvim-bin"
+set BOBPATH "$HOME/.local/share/bob/v0.11.6/bin/nvim"
 set EXERCISM "$HOME/.exercism/bin"
 fish_add_path $CARGO_PACKAGES $GOPATH $LUAROCKS $BOBPATH $EXERCISM
 
