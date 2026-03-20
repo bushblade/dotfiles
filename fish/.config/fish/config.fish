@@ -89,9 +89,8 @@ fzf --fish | source
 set LUAROCKS "$HOME/.luarocks/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
 set GOPATH "$HOME/go/bin"
-set BOBPATH "$HOME/.local/share/bob/v0.11.6/bin/nvim"
 set EXERCISM "$HOME/.exercism/bin"
-fish_add_path $CARGO_PACKAGES $GOPATH $LUAROCKS $BOBPATH $EXERCISM
+fish_add_path $CARGO_PACKAGES $GOPATH $LUAROCKS $EXERCISM
 
 
 if test -e "$HOME/.config/fish/secret.fish"
