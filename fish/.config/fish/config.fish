@@ -129,7 +129,7 @@ end
 
 # use Neovim as sudo with my config
 function sudonvim
-    sudo XDG_CONFIG_HOME=/home/will/.config XDG_DATA_HOME=/home/will/.local/share XDG_CACHE_HOME=/home/will/.cache /home/will/.local/share/bob/nvim-bin/nvim $argv
+    sudo XDG_CONFIG_HOME=$HOME/.config XDG_DATA_HOME=$HOME/.local/share XDG_CACHE_HOME=$HOME/.cache nvim $argv
 end
 
 # Function to find and trash all node_modules directories recursively.
