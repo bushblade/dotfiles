@@ -4,8 +4,6 @@
 
 - [ neovim ](https://neovim.io/) Editor and IDE
   - nvim config in separate repo [bushblade/nvim](https://github.com/bushblade/nvim)
-  - [bob](https://github.com/MordechaiHadad/bob) Neovim installer and version
-    manager
 - [Ghostty](https://ghostty.org/) Terminal emulator
 - [fzf](https://github.com/junegunn/fzf)
 - [Zoxide](https://github.com/ajeetdsouza/zoxide) Easily jump to directories 
