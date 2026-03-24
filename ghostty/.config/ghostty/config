@@ -10,3 +10,6 @@ cursor-invert-fg-bg
 cursor-style-blink = true
 mouse-hide-while-typing
 # initial-command = "tmux new-session -A -s default"
+
+window-inherit-working-directory = true
+keybind = ctrl+enter=new_window
