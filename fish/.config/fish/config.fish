@@ -85,6 +85,12 @@ abbr -a tkss tmux kill-session -t
 # Set up fzf key bindings
 fzf --fish | source
 
+# Neovim testing alias
+function nvim-test
+    set -lx NVIM_APPNAME nvim-test
+    nvim $argv
+end
+
 # Add npm, lua, deno and cargo packages to PATH
 set LUAROCKS "$HOME/.luarocks/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
