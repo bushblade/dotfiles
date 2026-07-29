@@ -1,0 +1,7 @@
+[keys]
+prefix = "ctrl+space"
+last_pane = "prefix+shift+s"
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
