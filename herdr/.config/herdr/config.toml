@@ -1,7 +1,14 @@
 [keys]
 prefix = "ctrl+space"
 last_pane = "prefix+shift+s"
+new_tab = ["prefix+c", "prefix+t"]
 
 [theme]
 name = "tokyo-night"
 auto_switch = false
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[experimental]
+pane_history = false
