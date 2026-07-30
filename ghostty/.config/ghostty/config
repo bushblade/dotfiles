@@ -2,7 +2,7 @@ font-family = VictorMono Nerd Font
 
 theme = TokyoNight
 
-background-opacity = 0.9
+background-opacity = 0.85
 background-blur = true
 window-decoration = none
 cursor-invert-fg-bg
