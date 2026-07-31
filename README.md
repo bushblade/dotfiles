@@ -9,6 +9,9 @@
 - [Zoxide](https://github.com/ajeetdsouza/zoxide) Easily jump to directories 
 - [ Tmux ](https://github.com/tmux/tmux/wiki)
   - [ Tmux Plugin Manager ](https://github.com/tmux-plugins/tpm)
+- [Herdr](https://herdr.dev/) Terminal Multiplexer
+  - [vim-herdr-navigation](https://github.com/paulbkim-dev/vim-herdr-navigation)
+    navigate vim/herdr splits
 - [ fish ](https://fishshell.com/)
   - [ fisher ](https://github.com/jorgebucaran/fisher) Plugin manager for fish
   - [ nvm ](https://github.com/jorgebucaran/nvm.fish) Node version manager
