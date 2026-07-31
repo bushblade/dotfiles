@@ -1,3 +1,4 @@
+onboarding = false
 [keys]
 prefix = "ctrl+space"
 last_pane = "prefix+shift+s"
@@ -10,5 +11,31 @@ auto_switch = false
 [ui]
 show_agent_labels_on_pane_borders = true
 
+agent_panel_sort = "spaces"
 [experimental]
 pane_history = false
+
+# vim-herdr-navigation
+[[keys.command]]
+key = "ctrl+h"
+type = "plugin_action"
+command = "vim-herdr-navigation.left"
+description = "navigate left (vim/herdr)"
+
+[[keys.command]]
+key = "ctrl+j"
+type = "plugin_action"
+command = "vim-herdr-navigation.down"
+description = "navigate down (vim/herdr)"
+
+[[keys.command]]
+key = "ctrl+k"
+type = "plugin_action"
+command = "vim-herdr-navigation.up"
+description = "navigate up (vim/herdr)"
+
+[[keys.command]]
+key = "ctrl+l"
+type = "plugin_action"
+command = "vim-herdr-navigation.right"
+description = "navigate right (vim/herdr)"
