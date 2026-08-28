@@ -3,6 +3,8 @@ onboarding = false
 prefix = "ctrl+space"
 last_pane = "prefix+shift+s"
 new_tab = ["prefix+c", "prefix+t"]
+navigate_workspace_up = "shift+k"
+navigate_workspace_down = "shift+j"
 
 [theme]
 name = "tokyo-night"
