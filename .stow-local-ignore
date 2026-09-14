@@ -4,8 +4,6 @@
 \.git
 \.gitignore
 
-\.prettierrc.json
-\prettierrc.json
 \.stow-local-ignore
 \.vim
 \createSymLinks.js

@@ -15,10 +15,12 @@
   "javascript": {
     "formatter": {
       "semicolons": "asNeeded",
-      "arrowParentheses": "always",
+      "arrowParentheses": "asNeeded",
       "bracketSpacing": true,
       "bracketSameLine": false,
       "quoteStyle": "single",
+      "jsxQuoteStyle": "single",
+      "trailingCommas": "es5",
       "attributePosition": "auto"
     }
   }
