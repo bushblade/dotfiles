@@ -18,6 +18,7 @@
   - [fzf.fish](https://github.com/PatrickF1/fzf.fish)
 - [ Yazi ](https://yazi-rs.github.io/) Another terminal file manager!
   - [ Tokyonight theme for Yazi](https://github.com/BennyOe/tokyo-night.yazi)
+- [ SuperFile ](https://superfile.dev/) Another terminal file manager!
 - [ starship ](https://starship.rs/) Prompt
 - [ eza ](https://github.com/eza-community/eza)
 - [ bat ](https://github.com/sharkdp/bat)
