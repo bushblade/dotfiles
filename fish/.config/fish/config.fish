@@ -105,6 +105,15 @@ end
 
 starship init fish | source
 
+# Fuzzy search files and open in Neovim
+function v --description "Fuzzy search files and open in Neovim"
+    set -l file (fzf --query="$argv" --preview 'bat --color=always --line-range :100 {} 2>/dev/null || head -n 100 {}')
+
+    if test -n "$file"
+        nvim "$file"
+    end
+end
+
 # function to convert all jpg images in directory to webp
 function imgs_to_webp
  for file in *.jpg *.png
