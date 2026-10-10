@@ -50,6 +50,38 @@ cd dotfiles
 stow */
 ```
 
+### Install the vim-herdr-navigation plugin
+
+[`vim-herdr-navigation`](https://github.com/paulbkim-dev/vim-herdr-navigation)
+lets `ctrl+h/j/k/l` move between Vim/Neovim splits and Herdr panes as if they
+were one app.
+
+Clone it into Herdr's plugin directory (this is the path the
+[bushblade/nvim](https://github.com/bushblade/nvim) config loads the editor side
+from, via `lua/plugins/navigator.lua`):
+
+```bash
+git clone https://github.com/paulbkim-dev/vim-herdr-navigation.git \
+  ~/.config/herdr/plugins/vim-herdr-navigation
+```
+
+Register it with Herdr (the keybindings are already declared in
+`herdr/.config/herdr/config.toml`):
+
+```bash
+herdr plugin link ~/.config/herdr/plugins/vim-herdr-navigation
+```
+
+Reload Herdr with `prefix+shift+r` (or restart), then confirm the actions are
+registered:
+
+```bash
+herdr plugin action list --plugin vim-herdr-navigation
+```
+
+> **Note:** Requires `jq` (used by `navigate.sh` to detect when a pane is
+> running Vim/Neovim) and Herdr `>= 0.7.0`.
+
 ### Install Node and npm with nvm
 
 ```bash
