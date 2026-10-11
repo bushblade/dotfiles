@@ -96,7 +96,8 @@ set LUAROCKS "$HOME/.luarocks/bin"
 set CARGO_PACKAGES "$HOME/.cargo/bin"
 set GOPATH "$HOME/go/bin"
 set EXERCISM "$HOME/.exercism/bin"
-fish_add_path $CARGO_PACKAGES $GOPATH $LUAROCKS $EXERCISM
+set LOCAL_BIN "$HOME/.local/bin"
+fish_add_path $CARGO_PACKAGES $GOPATH $LUAROCKS $EXERCISM $LOCAL_BIN
 
 
 if test -e "$HOME/.config/fish/secret.fish"
